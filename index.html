@@ -5013,13 +5013,12 @@
 														.wpr-mobile-sub-icon {
 															display: inline-block;
 															margin-left: 6px;
-															font-family: "Font Awesome 5 Free", "Font Awesome 5 Pro", Arial, sans-serif;
-															font-weight: 900;
 															font-size: 12px;
+															line-height: 1;
 															vertical-align: middle;
 														}
 														.wpr-mobile-sub-icon::before {
-															content: "\f107";
+															content: "▼";
 														}
 														.wpr-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items,
 														.wpr-mobile-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items {
@@ -15855,7 +15854,22 @@
 
 	</script>
 	<script>
-		// (Previously there was a global click/submit blocker here for preview; removed to allow normal navigation.)
+		// Simple mobile submenu toggler for items like "DESTINATIONS & PARKS"
+		document.addEventListener('DOMContentLoaded', function () {
+			var mobileParentLinks = document.querySelectorAll('.wpr-mobile-nav-menu .menu-item-has-children > a.wpr-mobile-menu-item');
+			mobileParentLinks.forEach(function (link) {
+				link.addEventListener('click', function (e) {
+					var parentLi = link.parentElement;
+					if (!parentLi) return;
+					var subMenu = parentLi.querySelector('.wpr-mobile-sub-mega-menu');
+					if (!subMenu) return;
+					e.preventDefault();
+					var isOpen = subMenu.getAttribute('data-open') === 'true';
+					subMenu.style.display = isOpen ? 'none' : 'block';
+					subMenu.setAttribute('data-open', isOpen ? 'false' : 'true');
+				});
+			});
+		});
 	</script>
 	</body>
 
