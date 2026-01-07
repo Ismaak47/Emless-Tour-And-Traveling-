@@ -4412,30 +4412,67 @@
 																border-style: none;
 																border-width: 0;
 																border-color: transparent;
-																margin-top: -2px
+																margin-top: -2px;
+																padding: 16px;
+																max-width: 800px;
+																margin-left: auto;
+																margin-right: auto
+															}
+															.wpr-sub-mega-menu,
+															.wpr-mobile-sub-mega-menu {
+																box-shadow: none
+															}
+															.wpr-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items,
+															.wpr-mobile-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items {
+																display: grid;
+																grid-template-columns: repeat(2, minmax(160px, 1fr));
+																gap: 12px;
+																padding: 0;
+																margin: 0;
+																list-style: none
+															}
+															.wpr-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-item,
+															.wpr-mobile-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-item {
+																background: #F9FAFB;
+																border: 1px solid rgba(0, 0, 0, 0.08);
+																border-radius: 10px
+															}
+															.wpr-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-item a,
+															.wpr-mobile-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-item a {
+																display: block;
+																padding: 12px 14px;
+																text-align: center;
+																font-weight: 600;
+																color: inherit
+															}
+															@media (max-width: 921px) {
+																.wpr-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items,
+																.wpr-mobile-sub-mega-menu .zanzibar-subpages-list .elementor-icon-list-items {
+																	grid-template-columns: 1fr
+																}
 															}
 
 															/* End custom CSS */
 														</style>
-														<div class="elementor-element elementor-widget elementor-widget-icon-list">
+														<div class="elementor-element zanzibar-subpages-list elementor-widget elementor-widget-icon-list">
 															<div class="elementor-widget-container">
 																<ul class="elementor-icon-list-items">
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Serengeti</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ngorongoro</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Manyara</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Kilimanjaro</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Mikumi</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Selous</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ruwaha</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Masai Mara</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ambosel</span></li>
-																	<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Tsavo</span></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:serengeti/"><span class="elementor-icon-list-text">Serengeti</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ngorongoro/"><span class="elementor-icon-list-text">Ngorongoro</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:manyara/"><span class="elementor-icon-list-text">Manyara</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:kilimanjaro/"><span class="elementor-icon-list-text">Kilimanjaro</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:mikumi/"><span class="elementor-icon-list-text">Mikumi</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:selous/"><span class="elementor-icon-list-text">Selous</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ruaha/"><span class="elementor-icon-list-text">Ruaha</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:masai-mara/"><span class="elementor-icon-list-text">Masai Mara</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ambosel/"><span class="elementor-icon-list-text">Ambosel</span></a></li>
+																	<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:tsavo/"><span class="elementor-icon-list-text">Tsavo</span></a></li>
 																</ul>
 															</div>
 														</div>
 														<div data-elementor-type="wp-post" data-elementor-id="25163"
 															class="elementor elementor-25163"
-															data-elementor-post-type="wpr_mega_menu">
+															data-elementor-post-type="wpr_mega_menu" style="display:none">
 															<div class="elementor-element elementor-element-df009eb e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
 																data-id="df009eb" data-element_type="container">
 																<div class="e-con-inner">
@@ -4984,30 +5021,25 @@
 															class="wpr-mobile-menu-item menu-link">ZANZIBAR TOURS &amp; EXCURSIONS<i
 																class="wpr-mobile-sub-icon"></i></a>
 														<div class="wpr-mobile-sub-mega-menu">
-Sasa naomba kwenye page ya ZANZIBAR TOURS & EXCURSIONS
-  ikiwa cliked iyoneshe subpages "ZANZIBAR TOURS & EXCURSIONS
-  " nataka hizi options ndio ziwe subpages ya page ya ZANZIBAR TOURS & EXCURSIONS
-  : Serengeti, Ngorongoro, Manyara,
-    Kilimanjaro, Mikumi, Selous, Ruwaha, Masai Mara, Ambosel, na Tsavo. naomba
-  ufanye hii kazi bila ya error yoyote kutokea															<div class="elementor-element elementor-widget elementor-widget-icon-list">
+															<div class="elementor-element zanzibar-subpages-list elementor-widget elementor-widget-icon-list">
 																<div class="elementor-widget-container">
 																	<ul class="elementor-icon-list-items">
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Serengeti</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ngorongoro</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Manyara</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Kilimanjaro</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Mikumi</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Selous</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ruwaha</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Masai Mara</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Ambosel</span></li>
-																		<li class="elementor-icon-list-item"><span class="elementor-icon-list-text">Tsavo</span></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:serengeti/"><span class="elementor-icon-list-text">Serengeti</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ngorongoro/"><span class="elementor-icon-list-text">Ngorongoro</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:manyara/"><span class="elementor-icon-list-text">Manyara</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:kilimanjaro/"><span class="elementor-icon-list-text">Kilimanjaro</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:mikumi/"><span class="elementor-icon-list-text">Mikumi</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:selous/"><span class="elementor-icon-list-text">Selous</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ruaha/"><span class="elementor-icon-list-text">Ruaha</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:masai-mara/"><span class="elementor-icon-list-text">Masai Mara</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:ambosel/"><span class="elementor-icon-list-text">Ambosel</span></a></li>
+																		<li class="elementor-icon-list-item"><a href="https://hola-africa.com/tours-safaris/safari-country:tsavo/"><span class="elementor-icon-list-text">Tsavo</span></a></li>
 																	</ul>
 																</div>
 															</div>
 															<div data-elementor-type="wp-post" data-elementor-id="25163"
 																class="elementor elementor-25163"
-																data-elementor-post-type="wpr_mega_menu">
+																data-elementor-post-type="wpr_mega_menu" style="display:none">
 																<div class="elementor-element elementor-element-df009eb e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
 																	data-id="df009eb" data-element_type="container">
 																	<div class="e-con-inner">
