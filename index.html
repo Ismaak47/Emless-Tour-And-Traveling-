@@ -15855,26 +15855,8 @@
 
 	</script>
 	<script>
-		(function () {
-			document.addEventListener('click', function (e) {
-				let el = e.target;
-				while (el && el !== document) {
-					if (el.tagName === 'A' || el.tagName === 'BUTTON' || (el.tagName === 'INPUT' && ['submit', 'button', 'reset'].includes(el.type))) {
-						e.preventDefault();
-						e.stopPropagation();
-						return false;
-					}
-					el = el.parentElement;
-				}
-			}, true);
-			document.addEventListener('submit', function (e) {
-				e.preventDefault();
-				e.stopPropagation();
-				return false;
-			}, true);
-		})();
+		// (Previously there was a global click/submit blocker here for preview; removed to allow normal navigation.)
 	</script>
-</body>
+	</body>
 
-</html>
-```
+	</html>
