@@ -226,7 +226,7 @@ const ToursSection = () => {
         </div>
 
         {/* View All Tours Button */}
-        <div className="text-center mt-4 md:mt-8">
+        <div className="text-center mt-10 md:mt-16">
           {!showAllTours ? (
             <Button
               variant="safari"
