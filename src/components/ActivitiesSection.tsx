@@ -160,7 +160,7 @@ const ActivitiesSection = () => {
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
 
   return (
-    <section className="pt-4 md:pt-8 pb-12 md:pb-24 bg-background">
+    <section className="pt-4 md:pt-8 pb-6 md:pb-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4 md:mb-6">
           <h2 className="text-3xl font-bold text-foreground mb-4">Activities</h2>
