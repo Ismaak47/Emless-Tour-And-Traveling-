@@ -162,7 +162,7 @@ const ActivitiesSection = () => {
   return (
     <section className="py-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold text-foreground mb-4">Activities</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Discover exciting adventures and cultural experiences in Zanzibar
