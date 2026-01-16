@@ -95,7 +95,7 @@ const HotelsSection = () => {
   };
 
   return (
-    <section className="-mt-6 md:-mt-12 pb-8 md:pb-16 bg-gradient-subtle">
+    <section className="pt-8 md:pt-16 pb-8 md:pb-16 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-4">
