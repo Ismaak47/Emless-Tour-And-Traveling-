@@ -160,9 +160,9 @@ const ActivitiesSection = () => {
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
 
   return (
-    <section className="py-2 md:py-4 bg-background">
+    <section className="py-4 md:py-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-2 md:mb-3">
+        <div className="text-center mb-4 md:mb-6">
           <h2 className="text-3xl font-bold text-foreground mb-4">Activities</h2>
           <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Discover exciting adventures and cultural experiences in Zanzibar
