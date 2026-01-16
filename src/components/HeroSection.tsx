@@ -75,10 +75,10 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-semibold mb-4 drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-semibold mb-4 drop-shadow-lg">
           Your African Safari Awaits
         </h1>
-        <p className="text-xl md:text-2xl mb-6 md:mb-12 drop-shadow-lg font-normal">
+        <p className="text-lg md:text-xl mb-6 md:mb-12 drop-shadow-lg font-normal">
           Discover. Compare. Book.
         </p>
 

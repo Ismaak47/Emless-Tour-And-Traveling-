@@ -146,14 +146,14 @@ const ToursSection = () => {
   const toursToShow = showAllTours ? tours : tours.slice(0, 4);
 
   return (
-    <section className="py-4 md:py-8 bg-background">
+    <section className="py-2 md:py-4 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-4 md:mb-6">
-          <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">
+        <div className="text-center mb-2 md:mb-3">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Zanzibar Tours & Tanzania Safaris
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Experience the magic of Zanzibar's pristine beaches and Stone Town culture, combined with Tanzania's world-renowned safari destinations including Serengeti and Ngorongoro.
           </p>
         </div>
@@ -162,7 +162,7 @@ const ToursSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {toursToShow.map((tour) => (
             <Card key={tour.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
-              <div className="relative h-64">
+              <div className="relative h-48">
                 <img
                   src={tour.image}
                   alt={tour.title}
@@ -174,7 +174,7 @@ const ToursSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
               </div>
 
-              <CardContent className="p-6">
+              <CardContent className="p-4">
                 <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
                   <div className="flex items-center space-x-1">
                     <Clock className="w-4 h-4" />
@@ -190,7 +190,7 @@ const ToursSection = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-medium text-foreground mb-3 group-hover:text-primary transition-safari">
+                <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-safari">
                   {tour.title}
                 </h3>
 
@@ -200,7 +200,7 @@ const ToursSection = () => {
                     {tour.highlights.map((highlight, index) => (
                       <span
                         key={index}
-                        className="bg-muted text-muted-foreground px-2 py-1 rounded-md text-xs"
+                        className="bg-muted text-muted-foreground px-2 py-0.5 rounded-md text-[10px]"
                       >
                         {highlight}
                       </span>
@@ -226,7 +226,7 @@ const ToursSection = () => {
         </div>
 
         {/* View All Tours Button */}
-        <div className="text-center mt-2 md:mt-4">
+        <div className="text-center mt-1 md:mt-2">
           {!showAllTours ? (
             <Button
               variant="safari"

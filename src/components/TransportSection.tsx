@@ -103,10 +103,10 @@ const TransportSection = () => {
     <section className="py-2 md:py-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-2 md:mb-6">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             Transport Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Reliable and comfortable transportation options for all your travel needs
           </p>
         </div>
@@ -123,15 +123,15 @@ const TransportSection = () => {
                   <img
                     src={transport.image}
                     alt={transport.title}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/30" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-2">
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
                     {transport.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     {transport.description}
                   </p>
                 </div>
@@ -143,7 +143,7 @@ const TransportSection = () => {
         <Dialog open={!!selectedTransport} onOpenChange={() => setSelectedTransport(null)}>
           <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle className="text-2xl font-bold text-foreground">
+              <DialogTitle className="text-xl font-bold text-foreground">
                 {selectedTransport?.title}
               </DialogTitle>
               <Button
@@ -169,14 +169,14 @@ const TransportSection = () => {
                                 <img
                                   src={detail.image}
                                   alt={detail.name}
-                                  className="w-full h-48 object-cover"
+                                  className="w-full h-40 object-cover"
                                 />
                               </div>
-                              <div className="p-4">
-                                <h4 className="text-lg font-semibold text-foreground mb-2">
+                              <div className="p-3">
+                                <h4 className="text-base font-semibold text-foreground mb-2">
                                   {detail.name}
                                 </h4>
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-xs text-muted-foreground">
                                   {detail.description}
                                 </p>
                               </div>
@@ -191,7 +191,7 @@ const TransportSection = () => {
                 </Carousel>
 
                 <div className="text-center">
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-sm text-muted-foreground mb-4">
                     Choose from our premium transport options for a comfortable and memorable journey
                   </p>
                   <Button variant="safari" size="lg">

@@ -163,8 +163,8 @@ const ActivitiesSection = () => {
     <section className="py-4 md:py-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4 md:mb-6">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Activities</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Activities</h2>
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Discover exciting adventures and cultural experiences in Zanzibar
           </p>
         </div>
@@ -176,7 +176,7 @@ const ActivitiesSection = () => {
               className="group cursor-pointer overflow-hidden border-0 shadow-safari hover:shadow-xl transition-all duration-300 hover:scale-105"
               onClick={() => setSelectedActivity(activity)}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 overflow-hidden">
                 <img
                   src={activity.image}
                   alt={activity.name}
@@ -184,11 +184,11 @@ const ActivitiesSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-lg">{activity.name}</h3>
+                  <h3 className="text-white font-semibold text-base">{activity.name}</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <p className="text-muted-foreground text-sm">
+              <CardContent className="p-4">
+                <p className="text-muted-foreground text-xs">
                   {activity.description}
                 </p>
               </CardContent>
@@ -201,13 +201,13 @@ const ActivitiesSection = () => {
             {selectedActivity && (
               <>
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold">
+                  <DialogTitle className="text-xl font-bold">
                     {selectedActivity.name}
                   </DialogTitle>
                 </DialogHeader>
 
                 <div className="space-y-6">
-                  <p className="text-muted-foreground text-lg">
+                  <p className="text-muted-foreground text-base">
                     {selectedActivity.description}
                   </p>
 
@@ -217,7 +217,7 @@ const ActivitiesSection = () => {
                         {selectedActivity.subActivities.map((subActivity, index) => (
                           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                             <Card className="border-border overflow-hidden">
-                              <div className="relative h-48 overflow-hidden">
+                              <div className="relative h-40 overflow-hidden">
                                 <img
                                   src={subActivity.image}
                                   alt={subActivity.name}
@@ -225,13 +225,13 @@ const ActivitiesSection = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                 <div className="absolute bottom-3 left-3 right-3">
-                                  <h4 className="text-white font-semibold text-lg mb-1">
+                                  <h4 className="text-white font-semibold text-base mb-1">
                                     {subActivity.name}
                                   </h4>
                                 </div>
                               </div>
-                              <CardContent className="p-4">
-                                <p className="text-sm text-muted-foreground">
+                              <CardContent className="p-3">
+                                <p className="text-xs text-muted-foreground">
                                   {subActivity.description}
                                 </p>
                               </CardContent>

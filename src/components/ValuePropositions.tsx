@@ -26,18 +26,18 @@ const ValuePropositions = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="flex items-start space-x-4 bg-background rounded-xl p-6 shadow-safari hover:shadow-elevated transition-safari"
+              className="flex items-start space-x-3 bg-background rounded-lg p-4 shadow-safari hover:shadow-elevated transition-safari"
             >
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-gradient-sunset rounded-full flex items-center justify-center">
-                  <Check className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 bg-gradient-sunset rounded-full flex items-center justify-center">
+                  <Check className="w-5 h-5 text-white" />
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-medium text-foreground mb-2">
+                <h3 className="text-base font-medium text-foreground mb-1">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-normal">
                   {value.description}
                 </p>
               </div>

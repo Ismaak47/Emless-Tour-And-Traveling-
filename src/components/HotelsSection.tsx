@@ -98,10 +98,10 @@ const HotelsSection = () => {
     <section className="-mt-2 md:-mt-4 pb-2 md:pb-4 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-2 md:mb-6">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             Top Hotels in Zanzibar
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Discover the finest accommodations in Zanzibar, from luxury resorts to charming boutique hotels
           </p>
         </div>
@@ -124,17 +124,17 @@ const HotelsSection = () => {
                 <CarouselItem key={hotel.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                   <Card className="group overflow-hidden border-0 shadow-safari hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
                     <CardContent className="p-0">
-                      <div className="relative overflow-hidden">
+                      <div className="relative h-48 overflow-hidden">
                         <img
                           src={hotel.image}
                           alt={hotel.alt}
-                          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
-                      <div className="p-6 bg-card">
-                        <h3 className="text-xl font-semibold text-card-foreground mb-4 min-h-[3rem] flex items-center">
+                      <div className="p-4 bg-card">
+                        <h3 className="text-lg font-semibold text-card-foreground mb-4 min-h-[3rem] flex items-center">
                           {hotel.name}
                         </h3>
                         <Button
