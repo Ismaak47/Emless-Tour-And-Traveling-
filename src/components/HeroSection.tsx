@@ -34,7 +34,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % heroImages.length
       );
     }, 5000); // Change image every 5 seconds
@@ -58,8 +58,6 @@ const HeroSection = () => {
       navigate(`/tanzania-safaris${params.toString() ? `?${params.toString()}` : ""}`);
     } else if (destination === "zanzibar") {
       navigate(`/zanzibar-tours${params.toString() ? `?${params.toString()}` : ""}`);
-    } else if (destination === "kenya") {
-      navigate(`/kenya-safaris${params.toString() ? `?${params.toString()}` : ""}`);
     }
   };
 
@@ -67,14 +65,14 @@ const HeroSection = () => {
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImages[currentImageIndex].src} 
+        <img
+          src={heroImages[currentImageIndex].src}
           alt={heroImages[currentImageIndex].alt}
           className="w-full h-full object-cover transition-all duration-1000"
         />
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
-      
+
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-semibold mb-4 drop-shadow-lg">
@@ -100,7 +98,6 @@ const HeroSection = () => {
                 <SelectContent>
                   <SelectItem value="tanzania">Tanzania</SelectItem>
                   <SelectItem value="zanzibar">Zanzibar</SelectItem>
-                  <SelectItem value="kenya">Kenya</SelectItem>
                 </SelectContent>
               </Select>
             </div>

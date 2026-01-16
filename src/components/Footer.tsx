@@ -41,9 +41,6 @@ const Footer = () => {
           <h3 className="text-lg font-bold">Destinations</h3>
           <ul className="space-y-2">
             {[{
-              name: "Kenya Safaris",
-              path: "/kenya-safaris"
-            }, {
               name: "Tanzania Safaris",
               path: "/tanzania-safaris"
             }, {

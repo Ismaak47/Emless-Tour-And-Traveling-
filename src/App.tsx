@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ZanzibarTours from "./pages/ZanzibarTours";
 import TanzaniaSafaris from "./pages/TanzaniaSafaris";
-import KenyaSafaris from "./pages/KenyaSafaris";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import TourDetail from "./pages/TourDetail";
@@ -32,7 +31,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/zanzibar-tours" element={<ZanzibarTours />} />
               <Route path="/tanzania-safaris" element={<TanzaniaSafaris />} />
-              <Route path="/kenya-safaris" element={<KenyaSafaris />} />
+
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/tour/:tourId" element={<TourDetail />} />
