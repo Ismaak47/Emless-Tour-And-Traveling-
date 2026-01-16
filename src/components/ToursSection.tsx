@@ -50,7 +50,7 @@ const ToursSection = () => {
       price: "$85",
       category: "zanzibar",
       highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
-      image: "https://images.unsplash.com/photo-1582967788606-a171c1080cb1?w=400&h=300&fit=crop&crop=center"
+      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
     },
     {
       id: "zt005",
