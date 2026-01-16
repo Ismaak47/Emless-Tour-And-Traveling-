@@ -17,7 +17,7 @@ const ToursSection = () => {
       price: "$45",
       category: "zanzibar",
       highlights: ["UNESCO World Heritage Site", "Spice Markets", "Cultural Sites", "Local Guide"],
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center"
+      image: "https://ucarecdn.com/19e59ca1-023f-4b5b-b13f-5799c8a0ff6b/-/crop/4218x2215/0,78/-/resize/1200x630/"
     },
     {
       id: "zt002",
