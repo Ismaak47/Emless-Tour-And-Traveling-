@@ -20,12 +20,11 @@ const Footer = () => {
           <h3 className="text-lg font-bold">Quick Links</h3>
           <ul className="space-y-2">
             {[
-              { name: "Safari & Tours", path: "/" },
-              { name: "Countries & Parks", path: "/" },
+              { name: "Home", path: "/" },
+              { name: "Zanzibar Tours", path: "/zanzibar-tours" },
+              { name: "Tanzania Safaris", path: "/tanzania-safaris" },
               { name: "About Us", path: "/about" },
-              { name: "Contact Us", path: "/contact" },
-              { name: "Travel Proposal", path: "/contact" },
-              { name: "Best Price Guarantee", path: "/about" }
+              { name: "Contact Us", path: "/contact" }
             ].map(link => (
               <li key={link.name}>
                 <Link to={link.path} className="text-footer-foreground/70 hover:text-footer-hover transition-safari">
