@@ -13,7 +13,6 @@ import TourDetail from "./pages/TourDetail";
 import BookTour from "./pages/BookTour";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import BookingNotifications from "./components/BookingNotifications";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +23,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="min-h-screen flex flex-col">
-          <BookingNotifications />
           <Header />
           <main className="flex-1">
             <Routes>
