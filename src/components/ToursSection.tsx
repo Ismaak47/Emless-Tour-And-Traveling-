@@ -28,7 +28,7 @@ const ToursSection = () => {
       price: "$65",
       category: "zanzibar",
       highlights: ["Spice Plantation", "Traditional Lunch", "Fruit Tasting", "Local Culture"],
-      image: "https://images.unsplash.com/photo-1596040905737-8e1f8b6c7be7?w=400&h=300&fit=crop&crop=center"
+      image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/2b/92.jpg"
     },
     {
       id: "zt003",
