@@ -95,9 +95,9 @@ const HotelsSection = () => {
   };
 
   return (
-    <section className="-mt-4 md:-mt-8 pb-4 md:pb-8 bg-gradient-subtle">
+    <section className="-mt-6 md:-mt-12 pb-8 md:pb-16 bg-gradient-subtle">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-4 md:mb-12">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Top Hotels in Zanzibar
           </h2>
