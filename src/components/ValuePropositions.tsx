@@ -4,7 +4,7 @@ const ValuePropositions = () => {
   const values = [
     {
       icon: Trophy,
-      title: "The Ultimate Collection of African Safaris",
+      title: "The Ultimate Collection Safaris",
       description: "Curated experiences across East Africa's most spectacular destinations"
     },
     {
