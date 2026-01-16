@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 const Footer = () => {
-  return <footer className="bg-footer text-footer-foreground py-8">
+  return <footer className="bg-footer text-footer-foreground py-4 md:py-8">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
@@ -102,7 +102,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-footer-foreground/20 mt-12 pt-8">
+      <div className="border-t border-footer-foreground/20 mt-6 md:mt-12 pt-4 md:pt-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-footer-foreground/60 text-sm">© 2025 Emless Tours and Traveling. All rights reserved.</p>
           <div className="hidden md:flex justify-center">

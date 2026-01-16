@@ -146,10 +146,10 @@ const ToursSection = () => {
   const toursToShow = showAllTours ? tours : tours.slice(0, 4);
 
   return (
-    <section className="py-8 bg-background">
+    <section className="py-4 md:py-8 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-4 md:mb-6">
           <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">
             Zanzibar Tours & Tanzania Safaris
           </h2>
@@ -226,7 +226,7 @@ const ToursSection = () => {
         </div>
 
         {/* View All Tours Button */}
-        <div className="text-center mt-4">
+        <div className="text-center mt-2 md:mt-4">
           {!showAllTours ? (
             <Button
               variant="safari"

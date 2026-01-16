@@ -78,12 +78,12 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-7xl font-semibold mb-4 drop-shadow-lg">
           Your African Safari Awaits
         </h1>
-        <p className="text-xl md:text-2xl mb-12 drop-shadow-lg font-normal">
+        <p className="text-xl md:text-2xl mb-6 md:mb-12 drop-shadow-lg font-normal">
           Discover. Compare. Book.
         </p>
 
         {/* Search Form */}
-        <div className="max-w-5xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-elevated">
+        <div className="max-w-5xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 border border-white/20 shadow-elevated">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Destination Select */}
             <div className="space-y-2">
