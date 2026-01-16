@@ -39,7 +39,7 @@ const ToursSection = () => {
       price: "$55",
       category: "zanzibar",
       highlights: ["Historical Prison", "Giant Tortoises", "Snorkeling", "Boat Transfer"],
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop&crop=center"
+      image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3"
     },
     {
       id: "zt004",
