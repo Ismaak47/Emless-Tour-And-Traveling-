@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
+import { Clock, Users, Star } from "lucide-react";
 import waterSportsImg from "@/assets/activities/water-sports.jpg";
 import divingImg from "@/assets/activities/diving.jpg";
 import aerialImg from "@/assets/activities/aerial.jpg";
@@ -29,6 +31,11 @@ interface Activity {
   name: string;
   image: string;
   description: string;
+  price: string;
+  duration: string;
+  groupSize: string;
+  rating: number;
+  highlights: string[];
   subActivities: {
     name: string;
     description: string;
@@ -42,6 +49,11 @@ const activities: Activity[] = [
     name: "Water Sports",
     image: waterSportsImg,
     description: "Experience the thrill of Zanzibar's crystal-clear waters with our exciting water sport adventures.",
+    price: "From $30",
+    duration: "1-4 Hours",
+    groupSize: "1-10 People",
+    rating: 4.8,
+    highlights: ["Wind Surfing", "Jet Ski", "Banana Boat", "Kite Boarding"],
     subActivities: [
       {
         name: "Wind Surfing",
@@ -70,6 +82,11 @@ const activities: Activity[] = [
     name: "Diving",
     image: divingImg,
     description: "Discover the underwater wonders of Zanzibar's marine sanctuaries and coral reefs.",
+    price: "From $50",
+    duration: "2-6 Hours",
+    groupSize: "2-8 People",
+    rating: 4.9,
+    highlights: ["Scuba Diving", "Snorkeling", "Night Diving", "Wreck Diving"],
     subActivities: [
       {
         name: "Scuba Diving",
@@ -98,6 +115,11 @@ const activities: Activity[] = [
     name: "Aerial Activities",
     image: aerialImg,
     description: "Soar above Zanzibar's stunning landscapes and coastlines with our aerial adventures.",
+    price: "From $120",
+    duration: "15-60 Mins",
+    groupSize: "1-4 People",
+    rating: 4.7,
+    highlights: ["Parasailing", "Helicopter Tours", "Paragliding", "Kite Flying"],
     subActivities: [
       {
         name: "Parasailing",
@@ -126,6 +148,11 @@ const activities: Activity[] = [
     name: "Cultural Village Tours",
     image: culturalImg,
     description: "Immerse yourself in authentic Zanzibar culture and traditional ways of life.",
+    price: "From $40",
+    duration: "3-5 Hours",
+    groupSize: "2-15 People",
+    rating: 4.8,
+    highlights: ["Village Visits", "Mwakakogwa", "Seaweed Farming", "Cycling"],
     subActivities: [
       {
         name: "Village Tours",
@@ -162,35 +189,76 @@ const ActivitiesSection = () => {
   return (
     <section className="pt-4 md:pt-8 pb-6 md:pb-12 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-4 md:mb-6">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Activities</h2>
-          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
+            Activities
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Discover exciting adventures and cultural experiences in Zanzibar
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {activities.map((activity) => (
-            <Card
-              key={activity.id}
-              className="group cursor-pointer overflow-hidden border-0 shadow-safari hover:shadow-xl transition-all duration-300 hover:scale-105"
-              onClick={() => setSelectedActivity(activity)}
-            >
-              <div className="relative h-40 overflow-hidden">
+            <Card key={activity.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
+              <div className="relative h-48">
                 <img
                   src={activity.image}
                   alt={activity.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-base">{activity.name}</h3>
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  {activity.price}
                 </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
               </div>
+
               <CardContent className="p-4">
-                <p className="text-muted-foreground text-xs">
-                  {activity.description}
-                </p>
+                <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
+                  <div className="flex items-center space-x-1">
+                    <Clock className="w-4 h-4" />
+                    <span>{activity.duration}</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Users className="w-4 h-4" />
+                    <span>{activity.groupSize}</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Star className="w-4 h-4 fill-primary text-primary" />
+                    <span>{activity.rating}</span>
+                  </div>
+                </div>
+
+                <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-safari">
+                  {activity.name}
+                </h3>
+
+                <div className="mb-4">
+                  <p className="text-sm text-muted-foreground mb-2">Highlights:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {activity.highlights.map((highlight, index) => (
+                      <span
+                        key={index}
+                        className="bg-muted text-muted-foreground px-2 py-0.5 rounded-md text-[10px]"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <Button
+                    variant="outline"
+                    className="flex-1 mr-2"
+                    onClick={() => setSelectedActivity(activity)}
+                  >
+                    View Details
+                  </Button>
+                  <Button variant="safari" className="flex-1">
+                    Book Now
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
+import { X, Clock, Users, Star } from "lucide-react";
 
 // Import images
 import landTransportImg from "@/assets/transport/land-transport.jpg";
@@ -25,6 +25,11 @@ const transportData = [
     title: "Land Transport",
     description: "Comfortable and reliable ground transportation",
     image: landTransportImg,
+    price: "From $20",
+    duration: "Flexible",
+    groupSize: "1-30 People",
+    rating: 4.8,
+    highlights: ["Luxury Bus", "Mini Bus", "VIP Alphard", "Professional Drivers"],
     details: [
       {
         name: "Coster Luxury Bus",
@@ -48,6 +53,11 @@ const transportData = [
     title: "Marine Transport",
     description: "Ferry and boat services across the Indian Ocean",
     image: marineTransportImg,
+    price: "From $35",
+    duration: "2-3 Hours",
+    groupSize: "1-200 People",
+    rating: 4.7,
+    highlights: ["Fast Ferry", "Catamaran", "Private Yacht", "Ocean Views"],
     details: [
       {
         name: "Kilimanjaro No. 7",
@@ -76,6 +86,11 @@ const transportData = [
     title: "Air Transport",
     description: "Domestic and regional flight services",
     image: airTransportImg,
+    price: "From $80",
+    duration: "20-60 Mins",
+    groupSize: "1-50 People",
+    rating: 4.9,
+    highlights: ["National Carrier", "Safari Flights", "Charter Options", "Quick Transfers"],
     details: [
       {
         name: "Air Tanzania",
@@ -102,38 +117,75 @@ const TransportSection = () => {
   return (
     <section className="py-2 md:py-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-2 md:mb-6">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Transport Services
           </h2>
-          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Reliable and comfortable transportation options for all your travel needs
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {transportData.map((transport) => (
-            <Card
-              key={transport.id}
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg border-0 bg-card/50 backdrop-blur-sm"
-              onClick={() => setSelectedTransport(transport)}
-            >
-              <CardContent className="p-0">
-                <div className="relative overflow-hidden rounded-t-lg">
-                  <img
-                    src={transport.image}
-                    alt={transport.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/30" />
+            <Card key={transport.id} className="overflow-hidden hover:shadow-elevated transition-safari group h-full flex flex-col">
+              <div className="relative h-48">
+                <img
+                  src={transport.image}
+                  alt={transport.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-safari"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  {transport.price}
                 </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    {transport.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {transport.description}
-                  </p>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
+              </div>
+
+              <CardContent className="p-4 flex flex-col flex-1">
+                <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
+                  <div className="flex items-center space-x-1">
+                    <Clock className="w-4 h-4" />
+                    <span>{transport.duration}</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Users className="w-4 h-4" />
+                    <span>{transport.groupSize}</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Star className="w-4 h-4 fill-primary text-primary" />
+                    <span>{transport.rating}</span>
+                  </div>
+                </div>
+
+                <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-safari">
+                  {transport.title}
+                </h3>
+
+                <div className="mb-4 flex-1">
+                  <p className="text-sm text-muted-foreground mb-2">Highlights:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {transport.highlights.map((highlight, index) => (
+                      <span
+                        key={index}
+                        className="bg-muted text-muted-foreground px-2 py-0.5 rounded-md text-[10px]"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between mt-auto gap-2">
+                  <Button
+                    variant="outline"
+                    className="flex-1"
+                    onClick={() => setSelectedTransport(transport)}
+                  >
+                    View Details
+                  </Button>
+                  <Button variant="safari" className="flex-1">
+                    Book Now
+                  </Button>
                 </div>
               </CardContent>
             </Card>
