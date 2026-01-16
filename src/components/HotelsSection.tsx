@@ -151,15 +151,9 @@ const HotelsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-12 bg-background/80 backdrop-blur-sm border-border hover:bg-accent" />
-            <CarouselNext className="hidden md:flex -right-12 bg-background/80 backdrop-blur-sm border-border hover:bg-accent" />
+            <CarouselPrevious className="flex -left-4 md:-left-12 bg-background/80 backdrop-blur-sm border-border hover:bg-accent" />
+            <CarouselNext className="flex -right-4 md:-right-12 bg-background/80 backdrop-blur-sm border-border hover:bg-accent" />
           </Carousel>
-        </div>
-
-        <div className="text-center mt-8">
-          <p className="text-sm text-muted-foreground">
-            Swipe or use arrow keys to explore more hotels
-          </p>
         </div>
       </div>
     </section>
