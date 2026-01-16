@@ -100,7 +100,7 @@ const TransportSection = () => {
   const [selectedTransport, setSelectedTransport] = useState<typeof transportData[0] | null>(null);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10">
+    <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -113,7 +113,7 @@ const TransportSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {transportData.map((transport) => (
-            <Card 
+            <Card
               key={transport.id}
               className="group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg border-0 bg-card/50 backdrop-blur-sm"
               onClick={() => setSelectedTransport(transport)}
@@ -155,7 +155,7 @@ const TransportSection = () => {
                 <X className="h-4 w-4" />
               </Button>
             </DialogHeader>
-            
+
             {selectedTransport && (
               <div className="space-y-6">
                 <Carousel className="w-full">
@@ -189,7 +189,7 @@ const TransportSection = () => {
                   <CarouselPrevious className="left-4" />
                   <CarouselNext className="right-4" />
                 </Carousel>
-                
+
                 <div className="text-center">
                   <p className="text-muted-foreground mb-4">
                     Choose from our premium transport options for a comfortable and memorable journey

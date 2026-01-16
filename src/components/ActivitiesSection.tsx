@@ -160,7 +160,7 @@ const ActivitiesSection = () => {
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">Activities</h2>
@@ -171,7 +171,7 @@ const ActivitiesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {activities.map((activity) => (
-            <Card 
+            <Card
               key={activity.id}
               className="group cursor-pointer overflow-hidden border-0 shadow-safari hover:shadow-xl transition-all duration-300 hover:scale-105"
               onClick={() => setSelectedActivity(activity)}
@@ -205,12 +205,12 @@ const ActivitiesSection = () => {
                     {selectedActivity.name}
                   </DialogTitle>
                 </DialogHeader>
-                
+
                 <div className="space-y-6">
                   <p className="text-muted-foreground text-lg">
                     {selectedActivity.description}
                   </p>
-                  
+
                   <div className="relative">
                     <Carousel className="w-full">
                       <CarouselContent>

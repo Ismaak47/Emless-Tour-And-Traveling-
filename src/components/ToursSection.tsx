@@ -146,7 +146,7 @@ const ToursSection = () => {
   const toursToShow = showAllTours ? tours : tours.slice(0, 4);
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-8 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -163,8 +163,8 @@ const ToursSection = () => {
           {toursToShow.map((tour) => (
             <Card key={tour.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
               <div className="relative h-64">
-                <img 
-                  src={tour.image} 
+                <img
+                  src={tour.image}
                   alt={tour.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                 />
@@ -173,7 +173,7 @@ const ToursSection = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
               </div>
-              
+
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
                   <div className="flex items-center space-x-1">
@@ -198,7 +198,7 @@ const ToursSection = () => {
                   <p className="text-sm text-muted-foreground mb-2">Highlights:</p>
                   <div className="flex flex-wrap gap-2">
                     {tour.highlights.map((highlight, index) => (
-                      <span 
+                      <span
                         key={index}
                         className="bg-muted text-muted-foreground px-2 py-1 rounded-md text-xs"
                       >
@@ -228,18 +228,18 @@ const ToursSection = () => {
         {/* View All Tours Button */}
         <div className="text-center mt-8">
           {!showAllTours ? (
-            <Button 
-              variant="safari" 
-              size="lg" 
+            <Button
+              variant="safari"
+              size="lg"
               className="px-12"
               onClick={() => setShowAllTours(true)}
             >
               See More Tours & Safaris
             </Button>
           ) : (
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="px-12"
               onClick={() => setShowAllTours(false)}
             >

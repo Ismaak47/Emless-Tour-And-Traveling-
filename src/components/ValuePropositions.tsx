@@ -9,7 +9,7 @@ const ValuePropositions = () => {
     },
     {
       icon: Shield,
-      title: "Unmatched Value, Every Time", 
+      title: "Unmatched Value, Every Time",
       description: "Best price guarantee with premium service and authentic experiences"
     },
     {
@@ -20,11 +20,11 @@ const ValuePropositions = () => {
   ];
 
   return (
-    <section className="py-16 bg-muted/50">
+    <section className="py-8 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <div 
+            <div
               key={index}
               className="flex items-start space-x-4 bg-background rounded-xl p-6 shadow-safari hover:shadow-elevated transition-safari"
             >
