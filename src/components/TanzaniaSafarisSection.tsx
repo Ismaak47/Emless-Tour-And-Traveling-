@@ -65,8 +65,8 @@ const TanzaniaSafarisSection = () => {
                 </div>
 
                 {/* Safaris Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                    {safaris.map((safari) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {safaris.slice(0, 3).map((safari) => (
                         <Card key={safari.id} className="overflow-hidden hover:shadow-elevated transition-safari group bg-background">
                             <div className="relative h-48">
                                 <img
