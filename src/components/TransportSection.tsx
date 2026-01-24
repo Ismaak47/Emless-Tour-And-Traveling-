@@ -115,9 +115,9 @@ const TransportSection = () => {
   const [selectedTransport, setSelectedTransport] = useState<typeof transportData[0] | null>(null);
 
   return (
-    <section className="py-6 md:py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10 mb-6 md:mb-10">
+    <section className="py-4 md:py-6 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/10 mb-4 md:mb-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Transport Services
           </h2>

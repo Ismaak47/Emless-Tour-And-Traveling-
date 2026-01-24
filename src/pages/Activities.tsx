@@ -2,7 +2,7 @@ import ActivitiesSection from "@/components/ActivitiesSection";
 
 const Activities = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <ActivitiesSection showAll={true} />
     </div>
   );

@@ -190,9 +190,9 @@ const ActivitiesSection = ({ showAll = false }: { showAll?: boolean }) => {
   const displayedActivities = showAll ? activities : activities.slice(0, 3);
 
   return (
-    <section className="pt-4 md:pt-8 pb-6 md:pb-12 bg-background">
+    <section className="pt-4 md:pt-6 pb-4 md:pb-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Activities
           </h2>
@@ -268,7 +268,7 @@ const ActivitiesSection = ({ showAll = false }: { showAll?: boolean }) => {
         </div>
 
         {!showAll && (
-          <div className="text-center mt-10 md:mt-16">
+          <div className="text-center mt-6 md:mt-8">
             <Link to="/activities">
               <Button
                 variant="safari"
