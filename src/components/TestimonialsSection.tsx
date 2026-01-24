@@ -200,11 +200,11 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <svg width="32" height="32" viewBox="0 0 32 32" className="">
-                  <circle cx="16" cy="16" r="16" fill="#00AA6C"/>
-                  <path d="M8.5 12.5c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm11 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm-5.5 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="white"/>
-                </svg>
-                <span className="font-semibold text-lg">Tripadvisor</span>
+                <img 
+                  src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
+                  alt="TripAdvisor" 
+                  className="w-32 h-8"
+                />
                 <span className="text-green-600 font-medium">Excellent</span>
               </div>
               <div className="flex items-center gap-1">
@@ -237,10 +237,11 @@ const TestimonialsSection = () => {
                       <p className="text-sm text-muted-foreground">{review.date}</p>
                     </div>
                     <div className="ml-auto">
-                      <svg width="24" height="24" viewBox="0 0 32 32">
-                        <circle cx="16" cy="16" r="16" fill="#00AA6C"/>
-                        <path d="M8.5 12.5c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm11 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm-5.5 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="white"/>
-                      </svg>
+                      <img 
+                        src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
+                        alt="TripAdvisor" 
+                        className="w-6 h-6"
+                      />
                     </div>
                   </div>
                   
@@ -265,13 +266,11 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <svg width="32" height="32" viewBox="0 0 32 32">
-                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#4285f4"/>
-                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#34a853"/>
-                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#fbbc05"/>
-                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#ea4335"/>
-                </svg>
-                <span className="font-semibold text-lg ml-2">Google</span>
+                <img 
+                  src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" 
+                  alt="Google" 
+                  className="w-24 h-8"
+                />
                 <span className="font-semibold text-lg ml-2">Excellent</span>
               </div>
               <div className="flex items-center gap-1">
@@ -302,9 +301,11 @@ const TestimonialsSection = () => {
                       <p className="text-sm text-muted-foreground">{review.date}</p>
                     </div>
                     <div className="ml-auto">
-                      <svg width="24" height="24" viewBox="0 0 32 32">
-                        <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#4285f4"/>
-                      </svg>
+                      <img 
+                        src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" 
+                        alt="Google" 
+                        className="w-6 h-6"
+                      />
                     </div>
                   </div>
                   
