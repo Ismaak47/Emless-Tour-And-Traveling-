@@ -115,7 +115,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-footer-foreground/20 mt-6 md:mt-12 pt-4 md:pt-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-footer-foreground/60 text-sm">© 2025 Emless Tours and Traveling. All rights reserved.</p>
+          <p className="text-footer-foreground/60 text-sm">© 2026 Emless Tours and Traveling. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Privacy Policy</a>
             <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Terms of Service</a>
