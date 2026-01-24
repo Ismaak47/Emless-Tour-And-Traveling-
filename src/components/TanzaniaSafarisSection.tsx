@@ -39,7 +39,7 @@ const TanzaniaSafarisSection = () => {
             price: "$2,299",
             category: "tanzania",
             highlights: ["Uhuru Peak", "Machame Route", "Professional Guide", "All Equipment"],
-            image: "https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=400&h=300&fit=crop&crop=center"
+            image: "https://mountkenyaclimbingtours.com/wp-content/uploads/2024/05/machame-route-climbing.jpg"
         },
         {
             id: "ts004",

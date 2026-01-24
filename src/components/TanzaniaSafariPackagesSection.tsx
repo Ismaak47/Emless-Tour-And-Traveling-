@@ -73,7 +73,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Adventure",
       highlights: "Mountain climbing, wildlife safari, ultimate adventure",
       price: "$2999",
-      image: "https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=400&h=300&fit=crop"
+      image: "https://mountkenyaclimbingtours.com/wp-content/uploads/2024/05/machame-route-climbing.jpg"
     },
     {
       id: "tsp008",
