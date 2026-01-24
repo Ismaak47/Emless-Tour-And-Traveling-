@@ -11,7 +11,6 @@ const ZanzibarTours = () => {
       duration: "Full Day",
       groupSize: "2-20 People",
       rating: 4.9,
-      price: "$85",
       highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
       description: "Experience the crystal clear waters of Menai Bay, swim with dolphins and enjoy pristine coral reefs.",
       image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
@@ -22,7 +21,6 @@ const ZanzibarTours = () => {
       duration: "Half Day",
       groupSize: "2-12 People",
       rating: 4.8,
-      price: "$45",
       highlights: ["UNESCO World Heritage Site", "Spice Markets", "Cultural Sites", "Local Guide"],
       description: "Explore the narrow winding streets of Stone Town, a UNESCO World Heritage Site rich in history and culture.",
       image: "https://ucarecdn.com/19e59ca1-023f-4b5b-b13f-5799c8a0ff6b/-/crop/4218x2215/0,78/-/resize/1200x630/"
@@ -33,7 +31,6 @@ const ZanzibarTours = () => {
       duration: "Full Day",
       groupSize: "2-15 People",
       rating: 4.9,
-      price: "$65",
       highlights: ["Spice Plantation", "Traditional Lunch", "Fruit Tasting", "Local Culture"],
       description: "Discover why Zanzibar is called the 'Spice Island' with visits to organic spice farms and traditional cooking.",
       image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/2b/92.jpg"
@@ -44,7 +41,6 @@ const ZanzibarTours = () => {
       duration: "Half Day",
       groupSize: "2-10 People",
       rating: 4.7,
-      price: "$55",
       highlights: ["Historical Prison", "Giant Tortoises", "Snorkeling", "Boat Transfer"],
       description: "Visit the historic Prison Island and meet the giant Aldabra tortoises, some over 100 years old.",
       image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3"
@@ -55,7 +51,6 @@ const ZanzibarTours = () => {
       duration: "Half Day",
       groupSize: "2-15 People",
       rating: 4.6,
-      price: "$40",
       highlights: ["Endemic Red Colobus", "Nature Walk", "Mangrove Boardwalk", "Conservation"],
       description: "Walk through the indigenous forest and spot the rare Red Colobus monkeys found only in Zanzibar.",
       image: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop&crop=center"
@@ -66,7 +61,6 @@ const ZanzibarTours = () => {
       duration: "Half Day",
       groupSize: "2-12 People",
       rating: 4.8,
-      price: "$50",
       highlights: ["Dolphin Swimming", "Historic Mosque", "Snorkeling", "Local Village"],
       description: "Visit the historic fishing village of Kizimkazi and swim with bottlenose and humpback dolphins.",
       image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop&crop=center"
@@ -77,7 +71,6 @@ const ZanzibarTours = () => {
       duration: "Full Day",
       groupSize: "2-8 People",
       rating: 4.8,
-      price: "$95",
       highlights: ["Coral Reef", "Marine Life", "White Sand Beach", "Professional Guide"],
       description: "Explore the pristine coral reefs around Mnemba Island with world-class snorkeling and diving.",
       image: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400&h=300&fit=crop&crop=center"
@@ -88,7 +81,6 @@ const ZanzibarTours = () => {
       duration: "Full Day",
       groupSize: "2-15 People",
       rating: 4.7,
-      price: "$55",
       highlights: ["White Sand Beaches", "Sunset Views", "Beach Activities", "Local Culture"],
       description: "Relax on the stunning white sand beaches of Nungwi and Kendwa with crystal clear waters.",
       image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&crop=center"
@@ -99,7 +91,6 @@ const ZanzibarTours = () => {
       duration: "Half Day",
       groupSize: "2-12 People",
       rating: 4.6,
-      price: "$45",
       highlights: ["Local Village", "Traditional Cooking", "Cultural Exchange", "Local Crafts"],
       description: "Experience authentic Zanzibari village life and learn traditional cooking methods.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
@@ -131,9 +122,6 @@ const ZanzibarTours = () => {
                     alt={tour.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                   />
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold">
-                    {tour.price}
-                  </div>
                 </div>
 
                 <CardContent className="p-6">
