@@ -14,7 +14,7 @@ const ZanzibarTours = () => {
       price: "$45",
       highlights: ["UNESCO World Heritage Site", "Spice Markets", "Cultural Sites", "Local Guide"],
       description: "Explore the narrow winding streets of Stone Town, a UNESCO World Heritage Site rich in history and culture.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center"
+      image: "https://ucarecdn.com/19e59ca1-023f-4b5b-b13f-5799c8a0ff6b/-/crop/4218x2215/0,78/-/resize/1200x630/"
     },
     {
       id: "zt002",
@@ -25,7 +25,7 @@ const ZanzibarTours = () => {
       price: "$65",
       highlights: ["Spice Plantation", "Traditional Lunch", "Fruit Tasting", "Local Culture"],
       description: "Discover why Zanzibar is called the 'Spice Island' with visits to organic spice farms and traditional cooking.",
-      image: "https://images.unsplash.com/photo-1596040905737-8e1f8b6c7be7?w=400&h=300&fit=crop&crop=center"
+      image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/2b/92.jpg"
     },
     {
       id: "zt003",
@@ -36,7 +36,7 @@ const ZanzibarTours = () => {
       price: "$55",
       highlights: ["Historical Prison", "Giant Tortoises", "Snorkeling", "Boat Transfer"],
       description: "Visit the historic Prison Island and meet the giant Aldabra tortoises, some over 100 years old.",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop&crop=center"
+      image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3"
     },
     {
       id: "zt004",
@@ -47,7 +47,7 @@ const ZanzibarTours = () => {
       price: "$85",
       highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
       description: "Experience the crystal clear waters of Menai Bay, swim with dolphins and enjoy pristine coral reefs.",
-      image: "https://images.unsplash.com/photo-1582967788606-a171c1080cb1?w=400&h=300&fit=crop&crop=center"
+      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
     },
     {
       id: "zt005",
@@ -126,8 +126,8 @@ const ZanzibarTours = () => {
             {zanzibarTours.map((tour) => (
               <Card key={tour.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
                 <div className="relative h-64">
-                  <img 
-                    src={tour.image} 
+                  <img
+                    src={tour.image}
                     alt={tour.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                   />
@@ -135,7 +135,7 @@ const ZanzibarTours = () => {
                     {tour.price}
                   </div>
                 </div>
-                
+
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
                     <div className="flex items-center space-x-1">
@@ -164,7 +164,7 @@ const ZanzibarTours = () => {
                     <p className="text-sm text-muted-foreground mb-2">Highlights:</p>
                     <div className="flex flex-wrap gap-2">
                       {tour.highlights.map((highlight, index) => (
-                        <span 
+                        <span
                           key={index}
                           className="bg-muted text-muted-foreground px-2 py-1 rounded-md text-xs"
                         >
