@@ -33,39 +33,102 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
         { question: "Is this tour suitable for children?", answer: "Yes, this tour is family-friendly and suitable for children of all ages." }
       ]
     },
-    zt002: {
+    // Zanzibar Packages
+    zp001: {
       ...tour,
-      description: "Visit authentic spice plantations and learn about Zanzibar's famous spices. Enjoy a traditional lunch prepared with fresh spices and tropical fruits.",
+      description: "Escape to pristine white sand beaches and crystal-clear turquoise waters. Perfect for relaxation with beachfront accommodation, water sports, and stunning sunsets over the Indian Ocean.",
       itinerary: [
-        { time: "8:30 AM", activity: "Hotel pickup", description: "Collection from your accommodation" },
-        { time: "9:30 AM", activity: "Spice Farm Tour", description: "Guided tour of spice plantations" },
-        { time: "11:30 AM", activity: "Fruit Tasting", description: "Sample fresh tropical fruits" },
-        { time: "12:30 PM", activity: "Traditional Lunch", description: "Enjoy local cuisine with fresh spices" },
-        { time: "2:00 PM", activity: "Return to hotel", description: "Drop-off at accommodation" }
+        { time: "Day 1", activity: "Arrival & Beach Check-in", description: "Airport pickup, transfer to beachfront hotel, welcome drink and beach orientation" },
+        { time: "Day 2", activity: "Beach Activities", description: "Snorkeling, swimming, beach volleyball, sunset dhow cruise" },
+        { time: "Day 3", activity: "Departure", description: "Final beach time, checkout and airport transfer" }
       ],
-      included: ["Transport", "Guide", "Lunch", "Fruit tasting", "Spice samples"],
-      notIncluded: ["Personal expenses", "Tips", "Drinks"],
+      included: ["Beachfront accommodation", "Airport transfers", "Daily breakfast", "Snorkeling gear", "Sunset dhow cruise"],
+      notIncluded: ["Flights", "Lunch & dinner", "Water sports equipment", "Personal expenses"],
       faqs: [
-        { question: "What spices will we see?", answer: "Cardamom, cinnamon, nutmeg, cloves, vanilla, and many more tropical spices." },
-        { question: "Is lunch included?", answer: "Yes, a traditional Swahili lunch is included in the tour." }
+        { question: "Best time to visit?", answer: "June to September for dry season, December to March for warm weather." },
+        { question: "What's included in accommodation?", answer: "Beachfront room with ocean view, daily breakfast, and beach access." }
       ]
     },
-    // Tanzania Safaris
-    ts001: {
+    zp002: {
       ...tour,
-      description: "Experience the world-famous Serengeti National Park and the breathtaking Ngorongoro Crater. Witness the Great Migration, encounter the Big Five, and immerse yourself in Tanzania's incredible wildlife.",
+      description: "Ultimate relaxation package with spa treatments, yoga sessions, and luxury beachfront accommodation. Disconnect from the world and rejuvenate your mind, body, and soul.",
       itinerary: [
-        { time: "Day 1", activity: "Arrival & Tarangire", description: "Airport pickup and drive to Tarangire National Park for game drive" },
-        { time: "Day 2", activity: "Serengeti National Park", description: "Full day game drive in Central Serengeti" },
-        { time: "Day 3", activity: "Serengeti - Northern Circuit", description: "Explore the northern Serengeti following the migration" },
-        { time: "Day 4", activity: "Ngorongoro Crater", description: "Descend into the crater for wildlife viewing" },
-        { time: "Day 5", activity: "Cultural Visit & Departure", description: "Maasai village visit and transfer to airport" }
+        { time: "Day 1", activity: "Arrival & Spa Welcome", description: "Airport transfer, luxury resort check-in, welcome spa treatment" },
+        { time: "Day 2", activity: "Wellness Day", description: "Morning yoga, full body massage, meditation session, healthy cuisine" },
+        { time: "Day 3", activity: "Beach Relaxation", description: "Private beach access, couples massage, sunset meditation" },
+        { time: "Day 4", activity: "Cultural Wellness", description: "Traditional healing session, spice garden visit, aromatherapy" },
+        { time: "Day 5", activity: "Departure", description: "Final relaxation session, checkout and airport transfer" }
       ],
-      included: ["4x4 Safari Vehicle", "Professional Guide", "Park Fees", "Accommodation", "All Meals", "Airport Transfers"],
-      notIncluded: ["Flights", "Visa", "Travel Insurance", "Personal Expenses", "Tips"],
+      included: ["Luxury accommodation", "All spa treatments", "Daily yoga classes", "Healthy meals", "Airport transfers"],
+      notIncluded: ["Flights", "Alcoholic beverages", "Additional spa services", "Personal shopping"],
       faqs: [
-        { question: "When is the best time to visit?", answer: "June to October for dry season, December to March for calving season." },
-        { question: "What type of accommodation?", answer: "Mid-range tented camps and lodges with en-suite facilities." }
+        { question: "What spa treatments are included?", answer: "Welcome massage, daily yoga, meditation, aromatherapy, and traditional healing." },
+        { question: "Is this suitable for solo travelers?", answer: "Absolutely! Perfect for solo wellness retreats and self-care." }
+      ]
+    },
+    zp003: {
+      ...tour,
+      description: "Immerse yourself in Zanzibar's rich Swahili culture. Visit Stone Town, spice farms, local villages, and experience traditional music, dance, and cuisine.",
+      itinerary: [
+        { time: "Day 1", activity: "Stone Town Heritage", description: "UNESCO World Heritage site tour, spice market, cultural museum" },
+        { time: "Day 2", activity: "Spice Farm Experience", description: "Guided spice tour, traditional cooking class, local lunch" },
+        { time: "Day 3", activity: "Village Life", description: "Local village visit, traditional crafts, community interaction" },
+        { time: "Day 4", activity: "Cultural Performance", description: "Traditional music and dance show, farewell dinner" }
+      ],
+      included: ["Cultural guide", "All entrance fees", "Traditional meals", "Cooking class", "Cultural performances"],
+      notIncluded: ["Accommodation", "Personal expenses", "Tips for guides", "Shopping"],
+      faqs: [
+        { question: "What will I learn about?", answer: "Swahili culture, spice history, traditional crafts, local customs and traditions." },
+        { question: "Is photography allowed?", answer: "Yes, but please respect local customs and ask permission for portraits." }
+      ]
+    },
+    // Tanzania Safari Packages
+    tsp001: {
+      ...tour,
+      description: "Witness the greatest wildlife spectacle on Earth. Follow the Great Migration across the endless Serengeti plains, encounter massive herds of wildebeest, zebras, and predators in action.",
+      itinerary: [
+        { time: "Day 1", activity: "Arrival Arusha", description: "Airport pickup, briefing, overnight in Arusha" },
+        { time: "Day 2", activity: "Serengeti Central", description: "Drive to Serengeti, afternoon game drive, camp setup" },
+        { time: "Day 3", activity: "Migration Tracking", description: "Full day following herds, river crossings, predator action" },
+        { time: "Day 4", activity: "Northern Serengeti", description: "Mara River area, wildebeest crossings, big cats" },
+        { time: "Day 5", activity: "Departure", description: "Morning game drive, fly back to Arusha, airport transfer" }
+      ],
+      included: ["4x4 safari vehicle", "Professional guide", "Park fees", "Camping equipment", "All meals", "Flights Serengeti-Arusha"],
+      notIncluded: ["International flights", "Visa fees", "Travel insurance", "Alcoholic drinks", "Tips"],
+      faqs: [
+        { question: "When is the migration?", answer: "July-October in northern Serengeti, December-March in southern areas." },
+        { question: "What animals will we see?", answer: "Wildebeest, zebras, lions, leopards, cheetahs, elephants, and over 500 bird species." }
+      ]
+    },
+    tsp002: {
+      ...tour,
+      description: "Descend into the world's largest intact volcanic crater, home to 25,000 large animals including the Big Five. Experience the Garden of Eden of Africa.",
+      itinerary: [
+        { time: "Day 1", activity: "Arusha to Ngorongoro", description: "Drive to crater rim, lodge check-in, crater viewpoint" },
+        { time: "Day 2", activity: "Crater Floor Safari", description: "Descend into crater, full day game drive, picnic lunch" },
+        { time: "Day 3", activity: "Departure", description: "Morning at leisure, drive back to Arusha, airport transfer" }
+      ],
+      included: ["Lodge accommodation", "4x4 safari vehicle", "Professional guide", "Park fees", "All meals"],
+      notIncluded: ["Flights", "Crater service fee", "Drinks", "Tips", "Personal expenses"],
+      faqs: [
+        { question: "Why is Ngorongoro special?", answer: "Highest concentration of wildlife in Africa, guaranteed Big Five sightings." },
+        { question: "How deep is the crater?", answer: "600 meters deep, 20km wide, covering 300 square kilometers." }
+      ]
+    },
+    tsp003: {
+      ...tour,
+      description: "Explore two contrasting parks: Tarangire with giant baobab trees and huge elephant herds, and Lake Manyara famous for tree-climbing lions and flamingos.",
+      itinerary: [
+        { time: "Day 1", activity: "Tarangire National Park", description: "Morning drive to Tarangire, full day game drive, elephant herds" },
+        { time: "Day 2", activity: "Lake Manyara", description: "Tree-climbing lions, flamingo flocks, diverse ecosystems" },
+        { time: "Day 3", activity: "Manyara Exploration", description: "Canopy walk, hot springs, cultural visit" },
+        { time: "Day 4", activity: "Return Arusha", description: "Morning game drive, return to Arusha" }
+      ],
+      included: ["Mid-range lodges", "Safari vehicle", "Professional guide", "Park fees", "All meals"],
+      notIncluded: ["Flights", "Drinks", "Tips", "Personal expenses", "Optional activities"],
+      faqs: [
+        { question: "Best time for tree-climbing lions?", answer: "Dry season (June-October) when lions seek shade in trees." },
+        { question: "What makes Tarangire special?", answer: "Largest elephant herds in Tanzania and iconic baobab trees." }
       ]
     }
   };
