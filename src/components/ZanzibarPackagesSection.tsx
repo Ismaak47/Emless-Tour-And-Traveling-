@@ -5,10 +5,11 @@ import { Clock, MapPin, Star } from "lucide-react";
 import TourDetailsModal from "@/components/TourDetailsModal";
 
 const ZanzibarPackagesSection = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Beach");
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [showMore, setShowMore] = useState(false);
 
-  const categories = ["All", "Beach", "Cultural", "Adventure", "Honeymoon", "Luxury", "Family", "Budget"];
+  const categories = ["Beach", "Cultural", "Adventure", "Honeymoon", "Luxury", "Family", "Budget"];
 
   const packages = [
     {
@@ -103,9 +104,8 @@ const ZanzibarPackagesSection = () => {
     }
   ];
 
-  const filteredPackages = selectedCategory === "All" 
-    ? packages 
-    : packages.filter(pkg => pkg.category === selectedCategory);
+  const filteredPackages = packages.filter(pkg => pkg.category === selectedCategory);
+  const displayedPackages = showMore ? filteredPackages : filteredPackages.slice(0, 3);
 
   return (
     <section className="py-4 md:py-6 bg-muted/30">
@@ -133,8 +133,8 @@ const ZanzibarPackagesSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {filteredPackages.map((pkg) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {displayedPackages.map((pkg) => (
             <Card key={pkg.id} className="overflow-hidden hover:shadow-elevated transition-safari group bg-background">
               <div className="relative h-48">
                 <img
@@ -180,6 +180,18 @@ const ZanzibarPackagesSection = () => {
             </Card>
           ))}
         </div>
+        
+        {filteredPackages.length > 3 && (
+          <div className="text-center mt-8">
+            <Button 
+              variant="safari" 
+              onClick={() => setShowMore(!showMore)}
+              className="px-8"
+            >
+              {showMore ? "Show Less" : "See More Packages"}
+            </Button>
+          </div>
+        )}
       </div>
       
       <TourDetailsModal 
