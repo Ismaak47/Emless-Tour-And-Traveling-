@@ -198,25 +198,11 @@ const TestimonialsSection = () => {
         {/* TripAdvisor Section */}
         <div className="mb-12">
           <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <img 
-                  src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
-                  alt="TripAdvisor" 
-                  className="w-24 h-8"
-                />
-                <span className="text-green-600 font-medium">Excellent</span>
-              </div>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center">
-                    <span className="text-white text-xs">●</span>
-                  </div>
-                ))}
-              </div>
-              <span className="font-semibold">5.0</span>
-              <span className="text-muted-foreground">| 408 reviews</span>
-            </div>
+            <img 
+              src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
+              alt="TripAdvisor" 
+              className="w-24 h-8"
+            />
             <Button variant="outline" className="px-6">
               Write a review
             </Button>
@@ -267,23 +253,11 @@ const TestimonialsSection = () => {
         {/* Google Reviews Section */}
         <div>
           <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <img 
-                  src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" 
-                  alt="Google" 
-                  className="w-24 h-8"
-                />
-                <span className="font-semibold text-lg ml-2">Excellent</span>
-              </div>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="font-semibold">4.9</span>
-              <span className="text-muted-foreground">| 37 reviews</span>
-            </div>
+            <img 
+              src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" 
+              alt="Google" 
+              className="w-24 h-8"
+            />
             <Button variant="outline" className="px-6">
               Write a review
             </Button>
