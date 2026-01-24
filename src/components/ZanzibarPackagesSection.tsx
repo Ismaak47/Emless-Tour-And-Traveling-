@@ -19,7 +19,7 @@ const ZanzibarPackagesSection = () => {
       category: "Beach",
       highlights: "Pristine beaches, crystal waters, sunset views",
       price: "$299",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
+      image: "https://apt-dan-white-beach.zanzibarhotelstoday.com/data/Pictures/OriginalPhoto/16167/1616745/1616745177/picture-bwejuu-zanzibar-beach-escape-45.JPEG"
     },
     {
       id: "zp002", 
@@ -28,7 +28,7 @@ const ZanzibarPackagesSection = () => {
       category: "Beach",
       highlights: "Spa treatments, beach lounging, tropical paradise",
       price: "$499",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+      image: "https://africaadventurevacations.com/wp-content/uploads/2022/06/What-to-do-in-Zanzibar-Tanzania.png"
     },
     {
       id: "zp003",
@@ -37,7 +37,7 @@ const ZanzibarPackagesSection = () => {
       category: "Cultural",
       highlights: "Stone Town, spice tours, local traditions",
       price: "$399",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+      image: "https://zenithtours.com/wp-content/uploads/2025/02/Join-Zanzibar-Festivals-and-Celebrations-1024x684.webp"
     },
     {
       id: "zp004",
