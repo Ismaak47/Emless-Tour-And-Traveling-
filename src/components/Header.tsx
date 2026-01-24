@@ -24,6 +24,9 @@ const Header = () => {
             <Link to="/tanzania-safaris" className="text-foreground hover:text-primary transition-safari font-medium">
               Tanzania Safaris
             </Link>
+            <Link to="/activities" className="text-foreground hover:text-primary transition-safari font-medium">
+              Activities
+            </Link>
             <Link to="/about" className="text-foreground hover:text-primary transition-safari font-medium">
               About Us
             </Link>
@@ -61,6 +64,9 @@ const Header = () => {
               </Link>
               <Link to="/tanzania-safaris" className="block px-4 py-2 text-foreground hover:text-primary transition-safari">
                 Tanzania Safaris
+              </Link>
+              <Link to="/activities" className="block px-4 py-2 text-foreground hover:text-primary transition-safari">
+                Activities
               </Link>
               <Link to="/about" className="block px-4 py-2 text-foreground hover:text-primary transition-safari">
                 About Us
