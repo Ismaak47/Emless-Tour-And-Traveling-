@@ -37,7 +37,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Mid-Range",
       highlights: "Elephant herds, tree-climbing lions, baobab trees",
       price: "$999",
-      image: "https://govolunteerafrica.org/wp-content/uploads/2025/02/Tanzania-Safari4.jpg"
+      image: "https://www.serengetiparktanzania.com/wp-content/uploads/2020/10/5-Days-Serengeti-and-Ngorongoro-Wildlife-Safari.jpg"
     },
     {
       id: "tsp004",
