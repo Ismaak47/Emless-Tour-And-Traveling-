@@ -82,6 +82,127 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
         { question: "Is photography allowed?", answer: "Yes, but please respect local customs and ask permission for portraits." }
       ]
     },
+    zp004: {
+      ...tour,
+      description: "Action-packed adventure with water sports, diving, snorkeling, and island hopping. Perfect for thrill-seekers and water enthusiasts.",
+      itinerary: [
+        { time: "Day 1", activity: "Water Sports Intro", description: "Jet skiing, windsurfing lessons, beach setup" },
+        { time: "Day 2", activity: "Diving Adventure", description: "Scuba diving certification, coral reef exploration" },
+        { time: "Day 3", activity: "Island Hopping", description: "Prison Island, dolphin watching, snorkeling safari" },
+        { time: "Day 4", activity: "Kite Surfing", description: "Kite surfing lessons, deep sea fishing" },
+        { time: "Day 5", activity: "Final Adventures", description: "Parasailing, sunset cruise, departure" }
+      ],
+      included: ["All water sports equipment", "Diving certification", "Island transfers", "Professional instructors"],
+      notIncluded: ["Accommodation", "Meals", "Travel insurance", "Personal gear"],
+      faqs: [
+        { question: "Do I need experience?", answer: "No, all activities include professional instruction for beginners." },
+        { question: "What's the minimum age?", answer: "12 years for most activities, 16 for scuba diving certification." }
+      ]
+    },
+    zp005: {
+      ...tour,
+      description: "Romantic honeymoon package with private beaches, couples spa treatments, candlelit dinners, and luxury accommodation for the perfect romantic getaway.",
+      itinerary: [
+        { time: "Day 1", activity: "Romantic Arrival", description: "Private transfer, champagne welcome, sunset dinner" },
+        { time: "Day 2", activity: "Couples Spa Day", description: "Couples massage, private beach picnic, wine tasting" },
+        { time: "Day 3", activity: "Island Romance", description: "Private island excursion, snorkeling, beach BBQ" },
+        { time: "Day 4", activity: "Cultural Romance", description: "Spice tour for couples, cooking class, traditional dinner" },
+        { time: "Day 5", activity: "Sunset Sailing", description: "Private dhow cruise, photography session" },
+        { time: "Day 6", activity: "Farewell", description: "Final breakfast, couples massage, departure" }
+      ],
+      included: ["Luxury suite", "All meals", "Couples spa treatments", "Private excursions", "Photography"],
+      notIncluded: ["Flights", "Alcoholic beverages", "Personal shopping", "Tips"],
+      faqs: [
+        { question: "Is this adults only?", answer: "Yes, designed exclusively for couples and honeymooners." },
+        { question: "Can we customize activities?", answer: "Absolutely! We tailor everything to your preferences." }
+      ]
+    },
+    zp006: {
+      ...tour,
+      description: "Ultimate luxury retreat with 5-star accommodation, butler service, private beaches, gourmet dining, and exclusive experiences.",
+      itinerary: [
+        { time: "Day 1", activity: "Luxury Arrival", description: "Private jet transfer, butler welcome, presidential suite" },
+        { time: "Day 2", activity: "Private Beach", description: "Exclusive beach access, personal chef, water sports" },
+        { time: "Day 3", activity: "Helicopter Tour", description: "Aerial island tour, private lunch, spa treatments" },
+        { time: "Day 4", activity: "Cultural Luxury", description: "Private Stone Town tour, exclusive spice farm, gourmet dinner" },
+        { time: "Day 5", activity: "Yacht Experience", description: "Private yacht charter, deep sea fishing, sunset cocktails" },
+        { time: "Day 6", activity: "Wellness Luxury", description: "Private yoga, spa day, meditation sessions" },
+        { time: "Day 7", activity: "Farewell", description: "Final luxury experiences, private departure" }
+      ],
+      included: ["Presidential suite", "Butler service", "All gourmet meals", "Private transfers", "Exclusive experiences"],
+      notIncluded: ["International flights", "Personal shopping", "Additional helicopter tours"],
+      faqs: [
+        { question: "What makes this luxury?", answer: "5-star accommodation, personal butler, private experiences, and gourmet dining." },
+        { question: "Is transportation included?", answer: "Yes, all private transfers including helicopter and yacht." }
+      ]
+    },
+    zp007: {
+      ...tour,
+      description: "Perfect family holiday with kid-friendly activities, family rooms, safe beaches, cultural experiences, and adventures suitable for all ages.",
+      itinerary: [
+        { time: "Day 1", activity: "Family Arrival", description: "Family room setup, kids club introduction, beach safety briefing" },
+        { time: "Day 2", activity: "Beach Family Fun", description: "Snorkeling lessons, sandcastle building, family games" },
+        { time: "Day 3", activity: "Cultural Family Tour", description: "Kid-friendly Stone Town tour, spice farm with activities" },
+        { time: "Day 4", activity: "Adventure Day", description: "Dolphin watching, safe water sports, family picnic" },
+        { time: "Day 5", activity: "Family Departure", description: "Final beach time, souvenir shopping, airport transfer" }
+      ],
+      included: ["Family accommodation", "Kids club access", "Family meals", "Child-safe activities", "Babysitting service"],
+      notIncluded: ["Flights", "Personal expenses", "Additional babysitting", "Shopping"],
+      faqs: [
+        { question: "What ages are suitable?", answer: "All ages welcome, special programs for 3-12 years old." },
+        { question: "Is childcare available?", answer: "Yes, professional babysitting and kids club included." }
+      ]
+    },
+    zp008: {
+      ...tour,
+      description: "Affordable exploration package with budget accommodation, local transport, authentic experiences, and the best value for money.",
+      itinerary: [
+        { time: "Day 1", activity: "Budget Arrival", description: "Shared transfer, guesthouse check-in, local orientation" },
+        { time: "Day 2", activity: "Local Exploration", description: "Walking Stone Town tour, local market visit, street food" },
+        { time: "Day 3", activity: "Beach Day", description: "Public beach access, local transport, budget lunch" }
+      ],
+      included: ["Budget accommodation", "Shared transfers", "Walking tours", "Local guide"],
+      notIncluded: ["Flights", "Most meals", "Private transport", "Entrance fees"],
+      faqs: [
+        { question: "What type of accommodation?", answer: "Clean budget guesthouses with shared facilities." },
+        { question: "Is it safe for budget travelers?", answer: "Yes, we ensure safe and reliable budget options." }
+      ]
+    },
+    zp009: {
+      ...tour,
+      description: "Marine conservation experience with dolphin tours, coral restoration, marine biology education, and eco-friendly activities.",
+      itinerary: [
+        { time: "Day 1", activity: "Marine Introduction", description: "Marine center visit, conservation briefing, snorkeling assessment" },
+        { time: "Day 2", activity: "Dolphin Research", description: "Dolphin watching, behavior study, data collection" },
+        { time: "Day 3", activity: "Coral Restoration", description: "Coral planting, reef monitoring, marine photography" },
+        { time: "Day 4", activity: "Conservation Action", description: "Beach cleanup, turtle monitoring, community education" }
+      ],
+      included: ["Marine guide", "Snorkeling equipment", "Research materials", "Conservation certificate"],
+      notIncluded: ["Accommodation", "Meals", "Diving equipment", "Personal gear"],
+      faqs: [
+        { question: "Do I need diving experience?", answer: "Basic snorkeling skills required, diving experience helpful but not essential." },
+        { question: "What will I contribute?", answer: "Real marine conservation work including coral restoration and research." }
+      ]
+    },
+    zp010: {
+      ...tour,
+      description: "Complete island exploration covering all major attractions, hidden gems, cultural sites, beaches, and authentic local experiences.",
+      itinerary: [
+        { time: "Day 1", activity: "Stone Town Exploration", description: "UNESCO sites, spice markets, cultural museums, sunset rooftop" },
+        { time: "Day 2", activity: "East Coast Beaches", description: "Paje and Jambiani beaches, kite surfing, local fishing" },
+        { time: "Day 3", activity: "Spice & Forest Tour", description: "Spice plantations, Jozani Forest, red colobus monkeys" },
+        { time: "Day 4", activity: "North Coast Adventure", description: "Nungwi beaches, dhow building, sunset cruise" },
+        { time: "Day 5", activity: "Island Hopping", description: "Prison Island, Nakupenda sandbank, snorkeling" },
+        { time: "Day 6", activity: "Cultural Immersion", description: "Village visits, traditional crafts, local cooking" },
+        { time: "Day 7", activity: "Final Exploration", description: "Hidden beaches, souvenir shopping, farewell dinner" }
+      ],
+      included: ["Premium accommodation", "Private guide", "All transfers", "Most meals", "All entrance fees"],
+      notIncluded: ["Flights", "Alcoholic beverages", "Personal shopping", "Tips"],
+      faqs: [
+        { question: "What makes this ultimate?", answer: "Covers every major attraction plus hidden local gems with premium service." },
+        { question: "Is transport included?", answer: "Yes, private vehicle with driver for entire tour." }
+      ]
+    },
     // Tanzania Safari Packages
     tsp001: {
       ...tour,
@@ -129,6 +250,127 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
       faqs: [
         { question: "Best time for tree-climbing lions?", answer: "Dry season (June-October) when lions seek shade in trees." },
         { question: "What makes Tarangire special?", answer: "Largest elephant herds in Tanzania and iconic baobab trees." }
+      ]
+    },
+    tsp004: {
+      ...tour,
+      description: "Affordable camping safari experience with basic accommodation, shared facilities, and authentic bush camping under African stars.",
+      itinerary: [
+        { time: "Day 1", activity: "Tarangire Camping", description: "Drive to Tarangire, game drive, set up camp" },
+        { time: "Day 2", activity: "Serengeti Camping", description: "Early game drive, travel to Serengeti, bush camping" },
+        { time: "Day 3", activity: "Ngorongoro & Return", description: "Crater tour, camping near crater, return to Arusha" }
+      ],
+      included: ["Camping equipment", "Safari vehicle", "Guide", "Park fees", "Basic meals"],
+      notIncluded: ["Sleeping bags", "Drinks", "Tips", "Comfort items", "Shower facilities"],
+      faqs: [
+        { question: "What camping facilities?", answer: "Basic bush camping with shared toilet facilities and campfire cooking." },
+        { question: "What should I bring?", answer: "Sleeping bag, personal toiletries, flashlight, and warm clothes." }
+      ]
+    },
+    tsp005: {
+      ...tour,
+      description: "Ultimate luxury safari with 5-star lodges, private guides, gourmet dining, and exclusive wildlife experiences in Tanzania's premier parks.",
+      itinerary: [
+        { time: "Day 1", activity: "Luxury Arrival", description: "Private jet to Serengeti, luxury tented camp, champagne welcome" },
+        { time: "Day 2", activity: "Private Serengeti", description: "Private vehicle and guide, hot air balloon, bush breakfast" },
+        { time: "Day 3", activity: "Exclusive Ngorongoro", description: "Private crater access, luxury lodge, spa treatments" },
+        { time: "Day 4", activity: "Tarangire Luxury", description: "Exclusive lodge, private game drives, cultural visit" },
+        { time: "Day 5", activity: "Lake Manyara Elite", description: "Tree lodge accommodation, canopy dining, night game drive" },
+        { time: "Day 6", activity: "Cultural Luxury", description: "Private Maasai village, luxury cultural center, traditional feast" },
+        { time: "Day 7", activity: "Departure", description: "Final game drive, private jet departure" }
+      ],
+      included: ["Luxury lodges", "Private guides", "All meals & drinks", "Private flights", "Spa treatments"],
+      notIncluded: ["International flights", "Personal shopping", "Additional helicopter tours"],
+      faqs: [
+        { question: "What makes this luxury?", answer: "5-star lodges, private guides, gourmet dining, and exclusive experiences." },
+        { question: "Group size?", answer: "Maximum 4 guests for intimate and personalized experience." }
+      ]
+    },
+    tsp006: {
+      ...tour,
+      description: "Family-friendly safari with kid-safe activities, educational programs, family tents, and experiences designed for children of all ages.",
+      itinerary: [
+        { time: "Day 1", activity: "Family Arrival", description: "Family briefing, kid-friendly lodge, junior ranger program" },
+        { time: "Day 2", activity: "Tarangire Family", description: "Elephant research center, family game drive, nature walk" },
+        { time: "Day 3", activity: "Serengeti Education", description: "Wildlife education center, family camping, star gazing" },
+        { time: "Day 4", activity: "Ngorongoro Learning", description: "Crater education, family picnic, cultural school visit" },
+        { time: "Day 5", activity: "Family Departure", description: "Final game drive, certificate ceremony, airport transfer" }
+      ],
+      included: ["Family accommodation", "Educational activities", "Child-safe vehicles", "Family meals", "Junior ranger program"],
+      notIncluded: ["Flights", "Personal expenses", "Additional activities", "Babysitting"],
+      faqs: [
+        { question: "What ages are suitable?", answer: "All ages welcome, special programs for 5-15 years old." },
+        { question: "Are vehicles child-safe?", answer: "Yes, modified vehicles with safety features and child seats." }
+      ]
+    },
+    tsp007: {
+      ...tour,
+      description: "Epic adventure combining Mount Kilimanjaro trekking with classic safari. Conquer Africa's highest peak then explore world-famous wildlife parks.",
+      itinerary: [
+        { time: "Day 1-2", activity: "Kilimanjaro Prep", description: "Arrival, equipment check, acclimatization hikes" },
+        { time: "Day 3-8", activity: "Kilimanjaro Trek", description: "Machame route ascent, summit attempt, descent" },
+        { time: "Day 9", activity: "Rest & Recovery", description: "Hotel rest, celebration dinner, safari preparation" },
+        { time: "Day 10", activity: "Tarangire Safari", description: "First game drive, elephant herds, baobab trees" }
+      ],
+      included: ["Mountain guides", "Camping equipment", "Safari vehicle", "Park fees", "All meals"],
+      notIncluded: ["Climbing gear rental", "Tips for guides", "Travel insurance", "Personal equipment"],
+      faqs: [
+        { question: "Fitness level required?", answer: "Good fitness essential for Kilimanjaro, moderate for safari portion." },
+        { question: "Success rate?", answer: "85% summit success rate with our experienced guides." }
+      ]
+    },
+    tsp008: {
+      ...tour,
+      description: "Specialized photography safari with professional guides, optimal lighting times, and access to the best wildlife photography locations.",
+      itinerary: [
+        { time: "Day 1", activity: "Photography Briefing", description: "Equipment check, technique workshop, Tarangire golden hour" },
+        { time: "Day 2", activity: "Serengeti Action", description: "Predator photography, migration shots, composition training" },
+        { time: "Day 3", activity: "Ngorongoro Portraits", description: "Big Five photography, crater landscapes, macro wildlife" },
+        { time: "Day 4", activity: "Lake Manyara Birds", description: "Bird photography, tree-climbing lions, reflection shots" },
+        { time: "Day 5", activity: "Advanced Techniques", description: "Night photography, star trails, wildlife behavior shots" },
+        { time: "Day 6", activity: "Portfolio Review", description: "Image editing workshop, portfolio selection, printing" }
+      ],
+      included: ["Photography guide", "Specialized vehicle", "Equipment support", "Editing workshop", "Portfolio printing"],
+      notIncluded: ["Camera equipment", "Memory cards", "Personal gear", "Image processing software"],
+      faqs: [
+        { question: "What equipment needed?", answer: "DSLR camera, telephoto lens (300mm+), tripod, and spare batteries." },
+        { question: "Skill level required?", answer: "Intermediate to advanced photographers, basic camera knowledge essential." }
+      ]
+    },
+    tsp009: {
+      ...tour,
+      description: "Romantic safari designed for couples with private accommodations, candlelit dinners, and intimate wildlife experiences.",
+      itinerary: [
+        { time: "Day 1", activity: "Romantic Arrival", description: "Private transfer, couples suite, champagne sunset" },
+        { time: "Day 2", activity: "Serengeti Romance", description: "Private game drive, bush breakfast, couples massage" },
+        { time: "Day 3", activity: "Ngorongoro Intimacy", description: "Crater picnic, private dining, star gazing" },
+        { time: "Day 4", activity: "Cultural Romance", description: "Maasai village visit, traditional ceremony, cultural dinner" },
+        { time: "Day 5", activity: "Adventure Together", description: "Hot air balloon, bush breakfast, photography session" },
+        { time: "Day 6", activity: "Farewell Romance", description: "Final game drive, couples spa, farewell dinner" }
+      ],
+      included: ["Romantic accommodation", "Private vehicle", "Couples activities", "Spa treatments", "Photography"],
+      notIncluded: ["Flights", "Alcoholic beverages", "Personal shopping", "Additional spa services"],
+      faqs: [
+        { question: "Is this adults only?", answer: "Yes, designed exclusively for couples seeking romantic experiences." },
+        { question: "Can we customize?", answer: "Absolutely! We tailor all activities to your romantic preferences." }
+      ]
+    },
+    tsp010: {
+      ...tour,
+      description: "Comprehensive Tanzania safari covering all major parks, cultural sites, and hidden gems for the ultimate East African experience.",
+      itinerary: [
+        { time: "Day 1-2", activity: "Arusha & Tarangire", description: "City tour, cultural center, Tarangire elephants and baobabs" },
+        { time: "Day 3-5", activity: "Serengeti Exploration", description: "Central, northern, and western Serengeti circuits" },
+        { time: "Day 6-7", activity: "Ngorongoro Experience", description: "Crater safari, Olduvai Gorge, cultural visits" },
+        { time: "Day 8", activity: "Lake Manyara", description: "Tree-climbing lions, flamingos, canopy walk" },
+        { time: "Day 9", activity: "Cultural Immersion", description: "Maasai village, traditional ceremonies, local markets" },
+        { time: "Day 10", activity: "Grand Finale", description: "Final game drives, souvenir shopping, farewell dinner" }
+      ],
+      included: ["Premium lodges", "Professional guide", "All park fees", "Cultural visits", "Most meals"],
+      notIncluded: ["International flights", "Visa fees", "Travel insurance", "Personal expenses"],
+      faqs: [
+        { question: "What makes this grand?", answer: "Covers all major parks plus cultural experiences and hidden locations." },
+        { question: "Best time to go?", answer: "Year-round destination, June-October for dry season, December-March for calving." }
       ]
     }
   };
