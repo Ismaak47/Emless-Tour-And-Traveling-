@@ -28,7 +28,7 @@ const TanzaniaSafarisSection = () => {
             price: "$899",
             category: "tanzania",
             highlights: ["Elephant Herds", "Tree Climbing Lions", "Baobab Trees", "Bird Watching"],
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYw48vutslOzvc7Zz6lkV6H4kcsLq-rHs1w&s"
+            image: "https://www.tarangirenationalparks.com/wp-content/uploads/2021/10/2-Days-Lake-Manyara-Ngorongoro-Crater-Safari-750x700-1-750x450.jpg"
         },
         {
             id: "ts003",
