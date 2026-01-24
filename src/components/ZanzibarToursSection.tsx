@@ -140,8 +140,7 @@ const ZanzibarToursSection = () => {
                     <Link to="/zanzibar-tours">
                         <Button
                             variant="safari"
-                            size="lg"
-                            className="px-12"
+                            className="px-8"
                         >
                             See More Zanzibar Tours
                         </Button>

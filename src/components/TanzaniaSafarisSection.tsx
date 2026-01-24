@@ -134,13 +134,11 @@ const TanzaniaSafarisSection = () => {
                     ))}
                 </div>
 
-                {/* See More Button */}
                 <div className="text-center mt-4 md:mt-6">
                     <Link to="/tanzania-safaris">
                         <Button
                             variant="safari"
-                            size="lg"
-                            className="px-12"
+                            className="px-8"
                         >
                             See More Tanzania Safaris
                         </Button>
