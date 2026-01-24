@@ -104,8 +104,7 @@ const TanzaniaSafariPackagesSection = () => {
     }
   ];
 
-  const filteredPackages = packages.filter(pkg => pkg.category === selectedCategory);
-  const displayedPackages = showMore ? filteredPackages : filteredPackages.slice(0, 3);
+  const displayedPackages = showMore ? packages : packages.slice(0, 3);
 
   return (
     <section className="py-4 md:py-6 bg-background">
@@ -181,7 +180,7 @@ const TanzaniaSafariPackagesSection = () => {
           ))}
         </div>
         
-        {filteredPackages.length > 3 && (
+        {packages.length > 3 && (
           <div className="text-center mt-8">
             <Button 
               variant="safari" 
