@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Clock, Users, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import waterSportsImg from "@/assets/activities/water-sports.jpg";
 import divingImg from "@/assets/activities/diving.jpg";
 import aerialImg from "@/assets/activities/aerial.jpg";
@@ -183,8 +184,10 @@ const activities: Activity[] = [
   }
 ];
 
-const ActivitiesSection = () => {
+const ActivitiesSection = ({ showAll = false }: { showAll?: boolean }) => {
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
+
+  const displayedActivities = showAll ? activities : activities.slice(0, 3);
 
   return (
     <section className="pt-4 md:pt-8 pb-6 md:pb-12 bg-background">
@@ -198,8 +201,8 @@ const ActivitiesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {activities.map((activity) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {displayedActivities.map((activity) => (
             <Card key={activity.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
               <div className="relative h-48">
                 <img
@@ -263,6 +266,20 @@ const ActivitiesSection = () => {
             </Card>
           ))}
         </div>
+
+        {!showAll && (
+          <div className="text-center mt-10 md:mt-16">
+            <Link to="/activities">
+              <Button
+                variant="safari"
+                size="lg"
+                className="px-12"
+              >
+                See More Activities
+              </Button>
+            </Link>
+          </div>
+        )}
 
         <Dialog open={!!selectedActivity} onOpenChange={() => setSelectedActivity(null)}>
           <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
