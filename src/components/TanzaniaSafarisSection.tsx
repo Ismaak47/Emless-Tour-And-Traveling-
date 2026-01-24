@@ -17,7 +17,7 @@ const TanzaniaSafarisSection = () => {
             price: "$1,899",
             category: "tanzania",
             highlights: ["Great Migration", "Big Five", "Ngorongoro Crater", "Cultural Visit"],
-            image: "https://goeastafricasafaris.com/5-days-tanzania-lodge-safari-l-manyara-ngorongoro-crater-serengeti-national-park/"
+            image: "https://goeastafricasafaris.com/wp-content/uploads/2025/05/5-Days-Tanzania-Lodge-Safari-L.Manyara-Ngorongoro-Crater-Serengeti-National-Park-2.jpg"
         },
         {
             id: "ts002",

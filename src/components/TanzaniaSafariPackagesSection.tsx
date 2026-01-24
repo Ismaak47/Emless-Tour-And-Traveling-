@@ -19,7 +19,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Wildlife",
       highlights: "Great Migration, Big Five, endless plains",
       price: "$1899",
-      image: "https://goeastafricasafaris.com/5-days-tanzania-lodge-safari-l-manyara-ngorongoro-crater-serengeti-national-park/"
+      image: "https://goeastafricasafaris.com/wp-content/uploads/2025/05/5-Days-Tanzania-Lodge-Safari-L.Manyara-Ngorongoro-Crater-Serengeti-National-Park-2.jpg"
     },
     {
       id: "tsp002",
