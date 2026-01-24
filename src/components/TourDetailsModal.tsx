@@ -67,41 +67,41 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
         { question: "When is the best time to visit?", answer: "June to October for dry season, December to March for calving season." },
         { question: "What type of accommodation?", answer: "Mid-range tented camps and lodges with en-suite facilities." }
       ]
-    },
-    // Default template for packages
-    default: {
-      ...tour,
-      description: `Experience the best of ${tour.name} with our carefully crafted itinerary. This ${tour.duration} adventure offers unforgettable memories and authentic experiences in Tanzania's most beautiful destinations.`,
-      itinerary: [
-        { time: "Day 1", activity: "Arrival & Welcome", description: "Airport pickup and transfer to accommodation" },
-        { time: "Day 2", activity: "Main Activities", description: "Full day of planned activities and experiences" },
-        { time: "Day 3", activity: "Exploration", description: "Discover local culture and natural beauty" },
-        { time: "Final Day", activity: "Departure", description: "Transfer to airport for departure" }
-      ],
-      included: ["Accommodation", "Professional Guide", "Transport", "Entrance Fees", "Some Meals"],
-      notIncluded: ["Flights", "Visa", "Travel Insurance", "Personal Expenses", "Tips"],
-      faqs: [
-        { question: "What's the best time to visit?", answer: "Year-round destination with different seasonal highlights." },
-        { question: "What should I pack?", answer: "Comfortable clothing, sunscreen, camera, and personal items." }
-      ]
     }
   };
 
-  const details = tourDetails[tour.id as keyof typeof tourDetails] || tourDetails.default;
+  // Generate details for any tour/package that doesn't have specific data
+  const getDetails = (tour: any) => {
+    if (tourDetails[tour.id as keyof typeof tourDetails]) {
+      return tourDetails[tour.id as keyof typeof tourDetails];
+    }
+    
+    return {
+      ...tour,
+      description: `Experience the best of ${tour.name || tour.title} with our carefully crafted ${tour.duration} adventure. This package offers unforgettable memories and authentic experiences in Tanzania's most beautiful destinations.`,
+      itinerary: [
+        { time: "Day 1", activity: "Arrival & Welcome", description: "Airport pickup and transfer to accommodation with welcome briefing" },
+        { time: "Day 2", activity: "Main Activities", description: "Full day of planned activities and cultural experiences" },
+        { time: "Day 3", activity: "Adventure & Exploration", description: "Discover local culture, nature, and authentic experiences" },
+        { time: "Final Day", activity: "Departure", description: "Final activities and transfer to airport for departure" }
+      ],
+      included: ["Accommodation", "Professional Guide", "Transport", "Entrance Fees", "Some Meals", "Airport Transfers"],
+      notIncluded: ["International Flights", "Visa Fees", "Travel Insurance", "Personal Expenses", "Tips & Gratuities"],
+      faqs: [
+        { question: "What's the best time to visit?", answer: "Year-round destination with different seasonal highlights and weather patterns." },
+        { question: "What should I pack?", answer: "Comfortable clothing, sunscreen, camera, personal medications, and appropriate footwear." },
+        { question: "Is this suitable for families?", answer: "Yes, this package can be customized for families with children of all ages." }
+      ]
+    };
+  };
+
+  const details = getDetails(tour);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold pr-8">{tour.title || tour.name}</DialogTitle>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-4"
-            onClick={onClose}
-          >
-            <X className="h-4 w-4" />
-          </Button>
+          <DialogTitle className="text-xl font-bold">{tour.title || tour.name}</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
