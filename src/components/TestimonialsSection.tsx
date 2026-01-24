@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 const TestimonialsSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [tripadvisorIndex, setTripadvisorIndex] = useState(0);
+  const [googleIndex, setGoogleIndex] = useState(0);
 
   const tripadvisorReviews = [
     {
@@ -30,6 +31,62 @@ const TestimonialsSection = () => {
       title: "Great experience with Yohana",
       review: "Had an amazing experience at Mikumi national park, we got to see all the animals and Yohana was a great guide, not only did...",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "James M",
+      date: "17 January 2026",
+      rating: 5,
+      title: "Unforgettable Safari",
+      review: "The best safari experience ever! Our guide was knowledgeable and made sure we saw the Big Five. Highly recommended!",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Sarah K",
+      date: "16 January 2026",
+      rating: 5,
+      title: "Perfect honeymoon trip",
+      review: "Everything was perfectly organized for our honeymoon. The romantic dinner under the stars was magical!",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "David R",
+      date: "15 January 2026",
+      rating: 5,
+      title: "Family adventure",
+      review: "Our kids loved every moment of the safari. The guide was patient and educational. Great family experience!",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Maria L",
+      date: "14 January 2026",
+      rating: 5,
+      title: "Cultural immersion",
+      review: "The Stone Town tour was incredible. Learning about the spice trade and local culture was fascinating!",
+      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Robert T",
+      date: "13 January 2026",
+      rating: 5,
+      title: "Beach paradise",
+      review: "The beaches in Zanzibar are pristine! Crystal clear waters and white sand. Perfect for relaxation.",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Emma W",
+      date: "12 January 2026",
+      rating: 5,
+      title: "Adventure of a lifetime",
+      review: "From diving to cultural tours, this trip had everything. The team was professional and friendly throughout.",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Michael B",
+      date: "11 January 2026",
+      rating: 5,
+      title: "Exceeded expectations",
+      review: "Every detail was taken care of. The luxury accommodations and personalized service made this trip unforgettable.",
+      avatar: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=50&h=50&fit=crop&crop=face"
     }
   ];
 
@@ -54,15 +111,79 @@ const TestimonialsSection = () => {
       rating: 5,
       review: "We went on an unforgettable safari with this agency and couldn't be happier with the experience. Our guide, Aristides, was simply wonderful: friendly, cheerful, and...",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Jennifer Smith",
+      date: "10 September 2025",
+      rating: 5,
+      review: "Outstanding service from booking to the end of our trip. The wildlife viewing was spectacular and our guide's knowledge was impressive.",
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Carlos Rodriguez",
+      date: "5 September 2025",
+      rating: 5,
+      review: "Perfect organization and timing. We saw lions, elephants, and zebras up close. The photography opportunities were endless!",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Lisa Johnson",
+      date: "1 September 2025",
+      rating: 5,
+      review: "The cultural tour of Stone Town was educational and fun. Our guide shared fascinating stories about the history and architecture.",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Ahmed Hassan",
+      date: "25 August 2025",
+      rating: 5,
+      review: "Excellent value for money. The accommodations were comfortable and the food was delicious. Highly recommend this tour company!",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Sophie Martin",
+      date: "20 August 2025",
+      rating: 5,
+      review: "The snorkeling and diving experiences were world-class. Crystal clear waters and abundant marine life made it magical.",
+      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Thomas Anderson",
+      date: "15 August 2025",
+      rating: 5,
+      review: "Professional guides, comfortable transportation, and amazing wildlife encounters. This trip exceeded all our expectations!",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face"
+    },
+    {
+      name: "Rachel Green",
+      date: "10 August 2025",
+      rating: 5,
+      review: "The sunset dhow cruise was romantic and peaceful. The whole Zanzibar experience was like a dream come true!",
+      avatar: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=50&h=50&fit=crop&crop=face"
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % googleReviews.length);
-  };
+  useEffect(() => {
+    const tripadvisorInterval = setInterval(() => {
+      setTripadvisorIndex((prev) => (prev + 3) % tripadvisorReviews.length);
+    }, 2000);
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + googleReviews.length) % googleReviews.length);
+    const googleInterval = setInterval(() => {
+      setGoogleIndex((prev) => (prev + 3) % googleReviews.length);
+    }, 2000);
+
+    return () => {
+      clearInterval(tripadvisorInterval);
+      clearInterval(googleInterval);
+    };
+  }, [tripadvisorReviews.length, googleReviews.length]);
+
+  const getVisibleReviews = (reviews, startIndex) => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      visible.push(reviews[(startIndex + i) % reviews.length]);
+    }
+    return visible;
   };
 
   return (
@@ -79,9 +200,10 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">TA</span>
-                </div>
+                <svg width="32" height="32" viewBox="0 0 32 32" className="">
+                  <circle cx="16" cy="16" r="16" fill="#00AA6C"/>
+                  <path d="M8.5 12.5c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm11 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm-5.5 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="white"/>
+                </svg>
                 <span className="font-semibold text-lg">Tripadvisor</span>
                 <span className="text-green-600 font-medium">Excellent</span>
               </div>
@@ -101,8 +223,8 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {tripadvisorReviews.map((review, index) => (
-              <Card key={index} className="bg-background">
+            {getVisibleReviews(tripadvisorReviews, tripadvisorIndex).map((review, index) => (
+              <Card key={`${tripadvisorIndex}-${index}`} className="bg-background">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <img 
@@ -114,8 +236,11 @@ const TestimonialsSection = () => {
                       <h4 className="font-semibold">{review.name}</h4>
                       <p className="text-sm text-muted-foreground">{review.date}</p>
                     </div>
-                    <div className="ml-auto w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">TA</span>
+                    <div className="ml-auto">
+                      <svg width="24" height="24" viewBox="0 0 32 32">
+                        <circle cx="16" cy="16" r="16" fill="#00AA6C"/>
+                        <path d="M8.5 12.5c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm11 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm-5.5 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="white"/>
+                      </svg>
                     </div>
                   </div>
                   
@@ -140,12 +265,13 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-blue-600">G</span>
-                <span className="text-2xl font-bold text-red-500">o</span>
-                <span className="text-2xl font-bold text-yellow-500">o</span>
-                <span className="text-2xl font-bold text-blue-600">g</span>
-                <span className="text-2xl font-bold text-green-600">l</span>
-                <span className="text-2xl font-bold text-red-500">e</span>
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#4285f4"/>
+                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#34a853"/>
+                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#fbbc05"/>
+                  <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#ea4335"/>
+                </svg>
+                <span className="font-semibold text-lg ml-2">Google</span>
                 <span className="font-semibold text-lg ml-2">Excellent</span>
               </div>
               <div className="flex items-center gap-1">
@@ -161,52 +287,38 @@ const TestimonialsSection = () => {
             </Button>
           </div>
 
-          <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {googleReviews.map((review, index) => (
-                <Card key={index} className="bg-background">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <img 
-                        src={review.avatar} 
-                        alt={review.name}
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
-                      <div>
-                        <h4 className="font-semibold">{review.name}</h4>
-                        <p className="text-sm text-muted-foreground">{review.date}</p>
-                      </div>
-                      <div className="ml-auto">
-                        <span className="text-2xl font-bold text-blue-600">G</span>
-                      </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {getVisibleReviews(googleReviews, googleIndex).map((review, index) => (
+              <Card key={`${googleIndex}-${index}`} className="bg-background">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img 
+                      src={review.avatar} 
+                      alt={review.name}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <h4 className="font-semibold">{review.name}</h4>
+                      <p className="text-sm text-muted-foreground">{review.date}</p>
                     </div>
-                    
-                    <div className="flex items-center gap-1 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      ))}
+                    <div className="ml-auto">
+                      <svg width="24" height="24" viewBox="0 0 32 32">
+                        <path d="M16.319 13.713v5.484h9.075c-.369 2.006-2.731 5.484-9.075 5.484-5.456 0-9.906-4.519-9.906-10.094S10.938 4.493 16.394 4.493c3.106 0 5.188 1.325 6.375 2.469l4.344-4.181C24.669 0.719 20.756-0.781 16.319-0.781 7.219-0.781 0 6.469 0 15.587s7.219 16.369 16.319 16.369c9.419 0 15.681-6.625 15.681-15.956 0-1.069-.119-1.881-.262-2.694H16.319z" fill="#4285f4"/>
+                      </svg>
                     </div>
-                    
-                    <p className="text-sm text-muted-foreground">{review.review}</p>
-                    <button className="text-sm text-blue-600 mt-2">Read more</button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            <button 
-              onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            
-            <button 
-              onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
+                  </div>
+                  
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground">{review.review}</p>
+                  <button className="text-sm text-blue-600 mt-2">Read more</button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
