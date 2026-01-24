@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Company Info */}
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            <img src="/lovable-uploads/b219aa98-6bc6-4316-aa8b-8338713574b1.png" alt="Emless Tour and Travelling Zanzibar" className="w-10 h-10" />
+            <img src="/footer-logo.png" alt="Emless Tour and Travelling Zanzibar" className="w-10 h-10" />
             <span className="text-xl font-bold">Emless Tours</span>
           </div>
           <p className="text-footer-foreground/70 leading-relaxed">
