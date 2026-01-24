@@ -238,7 +238,7 @@ const TestimonialsSection = () => {
                     </div>
                     <div className="ml-auto">
                       <img 
-                        src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
+                        src="https://cdn.trustindex.io/assets/platform/Tripadvisor/icon.svg" 
                         alt="TripAdvisor" 
                         className="w-6 h-6"
                       />
