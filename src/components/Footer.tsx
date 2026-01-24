@@ -105,16 +105,10 @@ const Footer = () => {
       <div className="border-t border-footer-foreground/20 mt-6 md:mt-12 pt-4 md:pt-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-footer-foreground/60 text-sm">© 2025 Emless Tours and Traveling. All rights reserved.</p>
-          <div className="hidden md:flex justify-center">
-            <img src="/lovable-uploads/530ecb66-3936-4e4c-953c-a8f06a8b7dac.png" alt="ZATO Member" className="h-32 w-auto" />
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Privacy Policy</a>
-              <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Terms of Service</a>
-              <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Cookie Policy</a>
-            </div>
-            <img src="/images/certification-logo.jpg" alt="Certification Logo" className="h-16 w-auto" />
+          <div className="flex space-x-6 text-sm">
+            <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Privacy Policy</a>
+            <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Terms of Service</a>
+            <a href="#" className="text-footer-foreground/60 hover:text-footer-hover transition-safari">Cookie Policy</a>
           </div>
         </div>
       </div>
