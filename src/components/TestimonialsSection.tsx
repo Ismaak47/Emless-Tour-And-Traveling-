@@ -247,9 +247,12 @@ const TestimonialsSection = () => {
                   
                   <div className="flex items-center gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-green-600 rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs">●</span>
-                      </div>
+                      <img 
+                        key={i} 
+                        src="https://cdn.trustindex.io/assets/platform/Tripadvisor/star/f.svg" 
+                        alt="TripAdvisor Star" 
+                        className="w-4 h-4"
+                      />
                     ))}
                   </div>
                   
