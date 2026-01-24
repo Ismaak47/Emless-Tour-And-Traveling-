@@ -203,7 +203,7 @@ const TestimonialsSection = () => {
                 <img 
                   src="https://cdn.trustindex.io/assets/platform/Tripadvisor/logo.svg" 
                   alt="TripAdvisor" 
-                  className="w-32 h-8"
+                  className="w-24 h-8"
                 />
                 <span className="text-green-600 font-medium">Excellent</span>
               </div>
