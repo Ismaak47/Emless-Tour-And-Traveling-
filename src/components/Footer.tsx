@@ -13,6 +13,17 @@ const Footer = () => {
           <p className="text-footer-foreground/70 leading-relaxed">
             Your trusted partner for authentic African safari experiences. Discover the wild beauty of East Africa with our expert guides and carefully crafted adventures.
           </p>
+          
+          {/* Payment Methods */}
+          <div className="flex items-center space-x-3">
+            <span className="text-sm text-footer-foreground/60">We Accept:</span>
+            <div className="flex space-x-2">
+              <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/visa.svg" alt="Visa" className="w-8 h-5 rounded" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="w-8 h-5" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express" className="w-8 h-5" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="w-8 h-5" />
+            </div>
+          </div>
         </div>
 
         {/* Quick Links */}
