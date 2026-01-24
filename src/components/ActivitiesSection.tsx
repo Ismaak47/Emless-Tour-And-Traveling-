@@ -272,8 +272,7 @@ const ActivitiesSection = ({ showAll = false }: { showAll?: boolean }) => {
             <Link to="/activities">
               <Button
                 variant="safari"
-                size="lg"
-                className="px-12"
+                className="px-8"
               >
                 See More Activities
               </Button>
