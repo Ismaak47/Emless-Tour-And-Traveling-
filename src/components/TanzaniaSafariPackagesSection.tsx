@@ -19,7 +19,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Wildlife",
       highlights: "Great Migration, Big Five, endless plains",
       price: "$1899",
-      image: "https://goeastafricasafaris.com/wp-content/uploads/2025/05/5-Days-Tanzania-Lodge-Safari-L.Manyara-Ngorongoro-Crater-Serengeti-National-Park-2.jpg"
+      image: "https://www.serengeti.com/assets/img/wildlife-spectacle-great-migration-tanzania.jpg"
     },
     {
       id: "tsp002",
@@ -28,7 +28,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Wildlife",
       highlights: "World's largest crater, dense wildlife, UNESCO site",
       price: "$1299",
-      image: "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?w=400&h=300&fit=crop"
+      image: "https://www.triptipedia.com/tip/img/yqXRQz850.jpg"
     },
     {
       id: "tsp003",
@@ -37,7 +37,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Mid-Range",
       highlights: "Elephant herds, tree-climbing lions, baobab trees",
       price: "$999",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYw48vutslOzvc7Zz6lkV6H4kcsLq-rHs1w&s"
+      image: "https://govolunteerafrica.org/wp-content/uploads/2025/02/Tanzania-Safari4.jpg"
     },
     {
       id: "tsp004",
