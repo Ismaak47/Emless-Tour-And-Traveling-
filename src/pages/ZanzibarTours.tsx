@@ -6,6 +6,17 @@ import { Link } from "react-router-dom";
 const ZanzibarTours = () => {
   const zanzibarTours = [
     {
+      id: "zt004",
+      title: "Safari Blue - Dolphin & Snorkeling Adventure",
+      duration: "Full Day",
+      groupSize: "2-20 People",
+      rating: 4.9,
+      price: "$85",
+      highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
+      description: "Experience the crystal clear waters of Menai Bay, swim with dolphins and enjoy pristine coral reefs.",
+      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
+    },
+    {
       id: "zt001",
       title: "Stone Town Historical & Cultural Tour",
       duration: "Half Day",
@@ -37,17 +48,6 @@ const ZanzibarTours = () => {
       highlights: ["Historical Prison", "Giant Tortoises", "Snorkeling", "Boat Transfer"],
       description: "Visit the historic Prison Island and meet the giant Aldabra tortoises, some over 100 years old.",
       image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3"
-    },
-    {
-      id: "zt004",
-      title: "Safari Blue - Dolphin & Snorkeling Adventure",
-      duration: "Full Day",
-      groupSize: "2-20 People",
-      rating: 4.9,
-      price: "$85",
-      highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
-      description: "Experience the crystal clear waters of Menai Bay, swim with dolphins and enjoy pristine coral reefs.",
-      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
     },
     {
       id: "zt005",
