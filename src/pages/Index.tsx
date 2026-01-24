@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import ValuePropositions from "@/components/ValuePropositions";
-import ToursSection from "@/components/ToursSection";
+import ZanzibarToursSection from "@/components/ZanzibarToursSection";
+import TanzaniaSafarisSection from "@/components/TanzaniaSafarisSection";
 import ActivitiesSection from "@/components/ActivitiesSection";
 import HotelsSection from "@/components/HotelsSection";
 import TransportSection from "@/components/TransportSection";
@@ -10,7 +11,8 @@ const Index = () => {
     <div>
       <HeroSection />
       <ValuePropositions />
-      <ToursSection />
+      <ZanzibarToursSection />
+      <TanzaniaSafarisSection />
       <ActivitiesSection />
       <HotelsSection />
       <TransportSection />
