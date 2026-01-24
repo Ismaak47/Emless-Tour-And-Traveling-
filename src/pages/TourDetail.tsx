@@ -35,6 +35,203 @@ const TourDetail = () => {
         { question: "How much walking is involved?", answer: "This is a walking tour covering approximately 2-3 km at a leisurely pace." }
       ]
     },
+    zt002: {
+      title: "Spice Farm Tour & Local Lunch",
+      duration: "Full Day",
+      groupSize: "2-15 People",
+      rating: 4.9,
+      price: "$65",
+      category: "zanzibar",
+      highlights: ["Spice Plantation", "Traditional Lunch", "Fruit Tasting", "Local Culture"],
+      description: "Discover why Zanzibar is called the 'Spice Island' with visits to organic spice farms and traditional cooking.",
+      image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/2b/92.jpg",
+      itinerary: [
+        { time: "9:00 AM", activity: "Hotel pickup", description: "Collection from your accommodation" },
+        { time: "10:00 AM", activity: "Spice farm visit", description: "Tour organic spice plantations" },
+        { time: "12:00 PM", activity: "Traditional lunch", description: "Enjoy local cuisine prepared with fresh spices" },
+        { time: "2:00 PM", activity: "Fruit tasting", description: "Sample tropical fruits grown on the farm" },
+        { time: "3:30 PM", activity: "Return to hotel", description: "Drop-off at your accommodation" }
+      ],
+      included: ["Transportation", "Guide", "Lunch", "Fruit tasting", "Spice samples"],
+      notIncluded: ["Personal expenses", "Tips", "Additional drinks"],
+      faqs: [
+        { question: "What spices will we see?", answer: "Cardamom, cinnamon, nutmeg, cloves, vanilla, and many more tropical spices." },
+        { question: "Is lunch included?", answer: "Yes, a traditional Zanzibari lunch prepared with farm-fresh spices is included." }
+      ]
+    },
+    zt003: {
+      title: "Prison Island & Giant Tortoises",
+      duration: "Half Day",
+      groupSize: "2-10 People",
+      rating: 4.7,
+      price: "$55",
+      category: "zanzibar",
+      highlights: ["Historical Prison", "Giant Tortoises", "Snorkeling", "Boat Transfer"],
+      description: "Visit the historic Prison Island and meet the giant Aldabra tortoises, some over 100 years old.",
+      image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3",
+      itinerary: [
+        { time: "9:00 AM", activity: "Boat departure", description: "Depart from Stone Town harbor" },
+        { time: "9:30 AM", activity: "Prison Island tour", description: "Explore the historical prison ruins" },
+        { time: "10:30 AM", activity: "Tortoise sanctuary", description: "Meet the giant Aldabra tortoises" },
+        { time: "11:30 AM", activity: "Snorkeling", description: "Snorkel in crystal clear waters" },
+        { time: "12:30 PM", activity: "Return to Stone Town", description: "Boat transfer back to harbor" }
+      ],
+      included: ["Boat transfer", "Guide", "Snorkeling equipment", "Island entry fees"],
+      notIncluded: ["Lunch", "Personal expenses", "Tips"],
+      faqs: [
+        { question: "Can I touch the tortoises?", answer: "Yes, under supervision you can gently interact with these gentle giants." },
+        { question: "Is snorkeling equipment provided?", answer: "Yes, masks, snorkels, and fins are provided." }
+      ]
+    },
+    zt004: {
+      title: "Safari Blue - Dolphin & Snorkeling Adventure",
+      duration: "Full Day",
+      groupSize: "2-20 People",
+      rating: 4.9,
+      price: "$85",
+      category: "zanzibar",
+      highlights: ["Dolphin Watching", "Snorkeling", "Seafood Lunch", "Sandbank Visit"],
+      description: "Experience the crystal clear waters of Menai Bay, swim with dolphins and enjoy pristine coral reefs.",
+      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg",
+      itinerary: [
+        { time: "8:00 AM", activity: "Hotel pickup", description: "Collection from South Coast hotels" },
+        { time: "9:00 AM", activity: "Dolphin watching", description: "Search for dolphins in Menai Bay" },
+        { time: "11:00 AM", activity: "Snorkeling", description: "Explore coral reefs and marine life" },
+        { time: "1:00 PM", activity: "Seafood lunch", description: "Fresh seafood BBQ on the beach" },
+        { time: "3:00 PM", activity: "Sandbank visit", description: "Relax on pristine white sandbank" },
+        { time: "5:00 PM", activity: "Return to hotel", description: "Drop-off at your accommodation" }
+      ],
+      included: ["Transportation", "Boat trip", "Snorkeling gear", "Seafood lunch", "Soft drinks", "Guide"],
+      notIncluded: ["Alcoholic drinks", "Tips", "Personal expenses"],
+      faqs: [
+        { question: "Will we definitely see dolphins?", answer: "While we can't guarantee sightings, we have a 90% success rate in dolphin encounters." },
+        { question: "What's included in lunch?", answer: "Fresh grilled fish, lobster, calamari, rice, and tropical fruits." }
+      ]
+    },
+    zt005: {
+      title: "Jozani Forest Red Colobus Monkeys",
+      duration: "Half Day",
+      groupSize: "2-15 People",
+      rating: 4.6,
+      price: "$40",
+      category: "zanzibar",
+      highlights: ["Endemic Red Colobus", "Nature Walk", "Mangrove Boardwalk", "Conservation"],
+      description: "Walk through the indigenous forest and spot the rare Red Colobus monkeys found only in Zanzibar.",
+      image: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop&crop=center",
+      itinerary: [
+        { time: "9:00 AM", activity: "Forest entrance", description: "Meet your guide at Jozani Forest" },
+        { time: "9:30 AM", activity: "Nature walk", description: "Guided walk through indigenous forest" },
+        { time: "10:30 AM", activity: "Monkey spotting", description: "Observe Red Colobus monkeys in their habitat" },
+        { time: "11:30 AM", activity: "Mangrove boardwalk", description: "Walk through mangrove ecosystem" },
+        { time: "12:00 PM", activity: "Return", description: "End of forest tour" }
+      ],
+      included: ["Park fees", "Professional guide", "Transportation"],
+      notIncluded: ["Lunch", "Personal expenses", "Tips"],
+      faqs: [
+        { question: "Are the monkeys dangerous?", answer: "No, Red Colobus monkeys are gentle and pose no threat to visitors." },
+        { question: "What should I wear?", answer: "Comfortable walking shoes and long pants are recommended." }
+      ]
+    },
+    zt006: {
+      title: "Kizimkazi Dolphin Tour",
+      duration: "Half Day",
+      groupSize: "2-12 People",
+      rating: 4.8,
+      price: "$50",
+      category: "zanzibar",
+      highlights: ["Dolphin Swimming", "Historic Mosque", "Snorkeling", "Local Village"],
+      description: "Visit the historic fishing village of Kizimkazi and swim with bottlenose and humpback dolphins.",
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop&crop=center",
+      itinerary: [
+        { time: "8:00 AM", activity: "Village visit", description: "Explore Kizimkazi fishing village" },
+        { time: "9:00 AM", activity: "Dolphin tour", description: "Boat trip to find dolphins" },
+        { time: "10:30 AM", activity: "Swimming with dolphins", description: "Swim alongside these magnificent creatures" },
+        { time: "11:30 AM", activity: "Historic mosque", description: "Visit 12th century Shirazi mosque" },
+        { time: "12:00 PM", activity: "Return", description: "End of tour" }
+      ],
+      included: ["Boat trip", "Guide", "Snorkeling equipment", "Village tour"],
+      notIncluded: ["Lunch", "Transportation to Kizimkazi", "Tips"],
+      faqs: [
+        { question: "Best time for dolphins?", answer: "Early morning (7-10 AM) offers the best chance of dolphin encounters." },
+        { question: "Can I swim with dolphins?", answer: "Yes, if conditions allow and dolphins are comfortable with human presence." }
+      ]
+    },
+    zt007: {
+      title: "Mnemba Island Snorkeling & Diving",
+      duration: "Full Day",
+      groupSize: "2-8 People",
+      rating: 4.8,
+      price: "$95",
+      category: "zanzibar",
+      highlights: ["Coral Reef", "Marine Life", "White Sand Beach", "Professional Guide"],
+      description: "Explore the pristine coral reefs around Mnemba Island with world-class snorkeling and diving.",
+      image: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400&h=300&fit=crop&crop=center",
+      itinerary: [
+        { time: "8:00 AM", activity: "Departure", description: "Boat departure from Nungwi" },
+        { time: "9:00 AM", activity: "Mnemba arrival", description: "Arrive at Mnemba Island waters" },
+        { time: "9:30 AM", activity: "Snorkeling session 1", description: "Explore coral gardens" },
+        { time: "11:00 AM", activity: "Beach time", description: "Relax on pristine white sand" },
+        { time: "1:00 PM", activity: "Lunch", description: "Beachside seafood lunch" },
+        { time: "2:30 PM", activity: "Snorkeling session 2", description: "Discover more marine life" },
+        { time: "4:00 PM", activity: "Return", description: "Boat trip back to Nungwi" }
+      ],
+      included: ["Boat transfer", "Snorkeling equipment", "Lunch", "Soft drinks", "Professional guide"],
+      notIncluded: ["Diving equipment rental", "Alcoholic drinks", "Tips"],
+      faqs: [
+        { question: "Do I need diving certification?", answer: "No certification needed for snorkeling. PADI certification required for diving." },
+        { question: "What marine life will we see?", answer: "Tropical fish, sea turtles, dolphins, and vibrant coral formations." }
+      ]
+    },
+    zt008: {
+      title: "Nungwi & Kendwa Beach Day Trip",
+      duration: "Full Day",
+      groupSize: "2-15 People",
+      rating: 4.7,
+      price: "$55",
+      category: "zanzibar",
+      highlights: ["White Sand Beaches", "Sunset Views", "Beach Activities", "Local Culture"],
+      description: "Relax on the stunning white sand beaches of Nungwi and Kendwa with crystal clear waters.",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&crop=center",
+      itinerary: [
+        { time: "9:00 AM", activity: "Nungwi arrival", description: "Arrive at Nungwi beach" },
+        { time: "10:00 AM", activity: "Beach activities", description: "Swimming, sunbathing, beach games" },
+        { time: "1:00 PM", activity: "Lunch", description: "Beachside seafood lunch" },
+        { time: "3:00 PM", activity: "Kendwa beach", description: "Move to Kendwa for afternoon" },
+        { time: "6:00 PM", activity: "Sunset viewing", description: "Watch spectacular sunset" },
+        { time: "7:00 PM", activity: "Return", description: "Transfer back to hotel" }
+      ],
+      included: ["Transportation", "Beach access", "Lunch", "Soft drinks"],
+      notIncluded: ["Water sports equipment", "Alcoholic drinks", "Tips"],
+      faqs: [
+        { question: "Are there tides at these beaches?", answer: "Nungwi and Kendwa have minimal tidal variation, perfect for all-day swimming." },
+        { question: "What activities are available?", answer: "Swimming, snorkeling, beach volleyball, dhow sailing, and sunset viewing." }
+      ]
+    },
+    zt009: {
+      title: "Cultural Village & Traditional Cooking",
+      duration: "Half Day",
+      groupSize: "2-12 People",
+      rating: 4.6,
+      price: "$45",
+      category: "zanzibar",
+      highlights: ["Local Village", "Traditional Cooking", "Cultural Exchange", "Local Crafts"],
+      description: "Experience authentic Zanzibari village life and learn traditional cooking methods.",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
+      itinerary: [
+        { time: "9:00 AM", activity: "Village arrival", description: "Welcome to local village" },
+        { time: "9:30 AM", activity: "Village tour", description: "Meet locals and see daily life" },
+        { time: "10:30 AM", activity: "Cooking class", description: "Learn to prepare traditional dishes" },
+        { time: "12:00 PM", activity: "Lunch", description: "Enjoy the meal you prepared" },
+        { time: "1:00 PM", activity: "Craft demonstration", description: "Watch local artisans at work" },
+        { time: "2:00 PM", activity: "Return", description: "End of cultural experience" }
+      ],
+      included: ["Village guide", "Cooking class", "Lunch", "Cultural activities"],
+      notIncluded: ["Transportation", "Personal expenses", "Tips"],
+      faqs: [
+        { question: "What will we cook?", answer: "Traditional dishes like pilau rice, coconut curry, and chapati bread." },
+        { question: "Is this suitable for vegetarians?", answer: "Yes, we can accommodate vegetarian and vegan dietary requirements." }
+      ]
+    },
     ts001: {
       title: "5-Day Serengeti & Ngorongoro Safari",
       duration: "5 Days",

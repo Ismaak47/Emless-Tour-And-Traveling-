@@ -32,6 +32,54 @@ const BookTour = () => {
       price: "$45",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center"
     },
+    zt002: {
+      title: "Spice Farm Tour & Local Lunch",
+      duration: "Full Day",
+      price: "$65",
+      image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/2b/92.jpg"
+    },
+    zt003: {
+      title: "Prison Island & Giant Tortoises",
+      duration: "Half Day",
+      price: "$55",
+      image: "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/ggzg4peuyxm6giluowp3"
+    },
+    zt004: {
+      title: "Safari Blue - Dolphin & Snorkeling Adventure",
+      duration: "Full Day",
+      price: "$85",
+      image: "https://cdn.getyourguide.com/img/tour/88915ee2118200079559ca15ba2711be430da9f4773f74b32c7be8dd3d248551.jpg/99.jpg"
+    },
+    zt005: {
+      title: "Jozani Forest Red Colobus Monkeys",
+      duration: "Half Day",
+      price: "$40",
+      image: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop&crop=center"
+    },
+    zt006: {
+      title: "Kizimkazi Dolphin Tour",
+      duration: "Half Day",
+      price: "$50",
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop&crop=center"
+    },
+    zt007: {
+      title: "Mnemba Island Snorkeling & Diving",
+      duration: "Full Day",
+      price: "$95",
+      image: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400&h=300&fit=crop&crop=center"
+    },
+    zt008: {
+      title: "Nungwi & Kendwa Beach Day Trip",
+      duration: "Full Day",
+      price: "$55",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&crop=center"
+    },
+    zt009: {
+      title: "Cultural Village & Traditional Cooking",
+      duration: "Half Day",
+      price: "$45",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
+    },
     ts001: {
       title: "5-Day Serengeti & Ngorongoro Safari",
       duration: "5 Days",
