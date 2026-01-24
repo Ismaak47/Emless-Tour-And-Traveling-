@@ -116,15 +116,16 @@ const ZanzibarTours = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {zanzibarTours.map((tour) => (
               <Card key={tour.id} className="overflow-hidden hover:shadow-elevated transition-safari group">
-                <div className="relative h-64">
+                <div className="relative h-48">
                   <img
                     src={tour.image}
                     alt={tour.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                   />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
                 </div>
 
-                <CardContent className="p-6">
+                <CardContent className="p-4">
                   <div className="flex items-center space-x-4 mb-3 text-sm text-muted-foreground">
                     <div className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
@@ -140,7 +141,7 @@ const ZanzibarTours = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-safari">
+                  <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-safari">
                     {tour.title}
                   </h3>
 
@@ -154,7 +155,7 @@ const ZanzibarTours = () => {
                       {tour.highlights.map((highlight, index) => (
                         <span
                           key={index}
-                          className="bg-muted text-muted-foreground px-2 py-1 rounded-md text-xs"
+                          className="bg-muted text-muted-foreground px-2 py-0.5 rounded-md text-[10px]"
                         >
                           {highlight}
                         </span>
