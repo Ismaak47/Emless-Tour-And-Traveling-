@@ -417,9 +417,6 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
               alt={tour.title || tour.name}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-              {tour.price}
-            </div>
           </div>
 
           {/* Quick Info */}
@@ -547,7 +544,7 @@ const TourDetailsModal = ({ isOpen, onClose, tour }: TourDetailsModalProps) => {
           {/* Action Buttons */}
           <div className="flex gap-4 pt-4">
             <Button variant="safari" className="flex-1">
-              Book Now - {tour.price}
+              Book Now
             </Button>
             <Button variant="outline" className="flex-1">
               Contact Us

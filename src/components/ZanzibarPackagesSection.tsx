@@ -142,9 +142,6 @@ const ZanzibarPackagesSection = () => {
                   alt={pkg.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                 />
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                  {pkg.price}
-                </div>
               </div>
 
               <CardContent className="p-4">

@@ -79,9 +79,6 @@ const ZanzibarToursSection = () => {
                                     alt={tour.title}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                                 />
-                                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                                    {tour.price}
-                                </div>
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-20"></div>
                             </div>
 
