@@ -7,6 +7,7 @@ import TanzaniaSafariPackagesSection from "@/components/TanzaniaSafariPackagesSe
 import ActivitiesSection from "@/components/ActivitiesSection";
 import HotelsSection from "@/components/HotelsSection";
 import TransportSection from "@/components/TransportSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <ActivitiesSection />
       <HotelsSection />
       <TransportSection />
+      <TestimonialsSection />
     </div>
   );
 };
