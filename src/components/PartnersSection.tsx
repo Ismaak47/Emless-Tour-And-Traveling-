@@ -16,6 +16,10 @@ const PartnersSection = () => {
       name: "CRDB Bank",
       logo: "https://images.africanfinancials.com/tz-crdb-logo.png",
     },
+    {
+      name: "Emless Tours Partner",
+      logo: "https://www.emlesstours.com/lovable-uploads/530ecb66-3936-4e4c-953c-a8f06a8b7dac.png",
+    },
   ];
 
   return (
@@ -30,7 +34,7 @@ const PartnersSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
           {partners.map((partner, index) => (
             <div
               key={index}
