@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex items-center space-x-3">
             <span className="text-sm text-footer-foreground/60">We Accept:</span>
             <div className="flex space-x-2">
-              <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/visa.svg" alt="Visa" className="w-8 h-5 rounded" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="w-8 h-5" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="w-8 h-5" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express" className="w-8 h-5" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="w-8 h-5" />
