@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import TourDetailsModal from "@/components/TourDetailsModal";
 
 const ZanzibarToursSection = () => {
+    const [selectedTour, setSelectedTour] = useState(null);
+
     const tours = [
         {
             id: "zt001",
@@ -52,6 +56,7 @@ const ZanzibarToursSection = () => {
     ];
 
     return (
+        <>
         <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
@@ -115,11 +120,13 @@ const ZanzibarToursSection = () => {
                                 </div>
 
                                 <div className="flex items-center justify-between">
-                                    <Link to={`/tour/${tour.id}`}>
-                                        <Button variant="outline" className="flex-1 mr-2">
-                                            View Details
-                                        </Button>
-                                    </Link>
+                                    <Button 
+                                        variant="outline" 
+                                        className="flex-1 mr-2"
+                                        onClick={() => setSelectedTour(tour)}
+                                    >
+                                        View Details
+                                    </Button>
                                     <Link to={`/book/${tour.id}`}>
                                         <Button variant="safari">
                                             Book Now
@@ -145,6 +152,13 @@ const ZanzibarToursSection = () => {
                 </div>
             </div>
         </section>
+        
+        <TourDetailsModal 
+            isOpen={!!selectedTour} 
+            onClose={() => setSelectedTour(null)} 
+            tour={selectedTour} 
+        />
+    </>
     );
 };
 

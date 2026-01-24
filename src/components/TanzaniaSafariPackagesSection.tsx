@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, MapPin, Star } from "lucide-react";
+import TourDetailsModal from "@/components/TourDetailsModal";
 
 const TanzaniaSafariPackagesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedPackage, setSelectedPackage] = useState(null);
 
   const categories = ["All", "Budget", "Mid-Range", "Luxury", "Wildlife", "Family", "Honeymoon", "Adventure"];
 
@@ -166,7 +168,11 @@ const TanzaniaSafariPackagesSection = () => {
                 </p>
 
                 <div className="flex items-center justify-between gap-2">
-                  <Button variant="outline" className="flex-1">
+                  <Button 
+                    variant="outline" 
+                    className="flex-1"
+                    onClick={() => setSelectedPackage(pkg)}
+                  >
                     View Details
                   </Button>
                   <Button variant="safari" className="flex-1">
@@ -178,6 +184,12 @@ const TanzaniaSafariPackagesSection = () => {
           ))}
         </div>
       </div>
+      
+      <TourDetailsModal 
+        isOpen={!!selectedPackage} 
+        onClose={() => setSelectedPackage(null)} 
+        tour={selectedPackage} 
+      />
     </section>
   );
 };

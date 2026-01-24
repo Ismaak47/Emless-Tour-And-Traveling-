@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import TourDetailsModal from "@/components/TourDetailsModal";
 
 const TanzaniaSafarisSection = () => {
+    const [selectedSafari, setSelectedSafari] = useState(null);
     const safaris = [
         {
             id: "ts001",
@@ -52,6 +55,7 @@ const TanzaniaSafarisSection = () => {
     ];
 
     return (
+        <>
         <section className="py-12 md:py-20 bg-muted/30">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
@@ -115,11 +119,13 @@ const TanzaniaSafarisSection = () => {
                                 </div>
 
                                 <div className="flex items-center justify-between">
-                                    <Link to={`/tour/${safari.id}`}>
-                                        <Button variant="outline" className="flex-1 mr-2">
-                                            View Details
-                                        </Button>
-                                    </Link>
+                                    <Button 
+                                        variant="outline" 
+                                        className="flex-1 mr-2"
+                                        onClick={() => setSelectedSafari(safari)}
+                                    >
+                                        View Details
+                                    </Button>
                                     <Link to={`/book/${safari.id}`}>
                                         <Button variant="safari">
                                             Book Now
@@ -145,6 +151,13 @@ const TanzaniaSafarisSection = () => {
                 </div>
             </div>
         </section>
+        
+        <TourDetailsModal 
+            isOpen={!!selectedSafari} 
+            onClose={() => setSelectedSafari(null)} 
+            tour={selectedSafari} 
+        />
+    </>
     );
 };
 
