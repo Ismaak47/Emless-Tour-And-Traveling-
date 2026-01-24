@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
       date: "19 January 2026",
       rating: 5,
       title: "Very good",
-      review: "My guide was felix,he was very friendly,helpful and very pleasant to talk to,I recommend it with all my heart",
+      review: "My guide from Emless Tours was felix,he was very friendly,helpful and very pleasant to talk to,I recommend Emless Tours with all my heart",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -21,23 +21,23 @@ const TestimonialsSection = () => {
       date: "18 January 2026", 
       rating: 5,
       title: "Amazing day",
-      review: "Amazing day with our amazing guide Aristilides the champion to take us as close as possible to the animals! Thanks to him",
+      review: "Amazing day with Emless Tours and our amazing guide Aristilides the champion to take us as close as possible to the animals! Thanks to Emless Tours",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Zaynab H",
       date: "18 January 2026",
       rating: 5,
-      title: "Great experience with Yohana",
-      review: "Had an amazing experience at Mikumi national park, we got to see all the animals and Yohana was a great guide, not only did...",
+      title: "Great experience with Emless Tours",
+      review: "Had an amazing experience at Mikumi national park with Emless Tours, we got to see all the animals and Yohana was a great guide from Emless Tours",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "James M",
       date: "17 January 2026",
       rating: 5,
-      title: "Unforgettable Safari",
-      review: "The best safari experience ever! Our guide was knowledgeable and made sure we saw the Big Five. Highly recommended!",
+      title: "Unforgettable Safari with Emless Tours",
+      review: "The best safari experience ever with Emless Tours! Our guide was knowledgeable and made sure we saw the Big Five. Highly recommend Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -45,7 +45,7 @@ const TestimonialsSection = () => {
       date: "16 January 2026",
       rating: 5,
       title: "Perfect honeymoon trip",
-      review: "Everything was perfectly organized for our honeymoon. The romantic dinner under the stars was magical!",
+      review: "Everything was perfectly organized by Emless Tours for our honeymoon. The romantic dinner under the stars was magical! Thank you Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
       date: "15 January 2026",
       rating: 5,
       title: "Family adventure",
-      review: "Our kids loved every moment of the safari. The guide was patient and educational. Great family experience!",
+      review: "Our kids loved every moment of the safari with Emless Tours. The guide was patient and educational. Great family experience with Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
       date: "14 January 2026",
       rating: 5,
       title: "Cultural immersion",
-      review: "The Stone Town tour was incredible. Learning about the spice trade and local culture was fascinating!",
+      review: "The Stone Town tour with Emless Tours was incredible. Learning about the spice trade and local culture was fascinating! Emless Tours is the best!",
       avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
       date: "13 January 2026",
       rating: 5,
       title: "Beach paradise",
-      review: "The beaches in Zanzibar are pristine! Crystal clear waters and white sand. Perfect for relaxation.",
+      review: "The beaches in Zanzibar with Emless Tours are pristine! Crystal clear waters and white sand. Perfect for relaxation. Thank you Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
       date: "12 January 2026",
       rating: 5,
       title: "Adventure of a lifetime",
-      review: "From diving to cultural tours, this trip had everything. The team was professional and friendly throughout.",
+      review: "From diving to cultural tours, Emless Tours had everything. The team was professional and friendly throughout. Highly recommend Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face"
     },
     {
@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
       date: "11 January 2026",
       rating: 5,
       title: "Exceeded expectations",
-      review: "Every detail was taken care of. The luxury accommodations and personalized service made this trip unforgettable.",
+      review: "Every detail was taken care of by Emless Tours. The luxury accommodations and personalized service made this trip unforgettable. Emless Tours is amazing!",
       avatar: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=50&h=50&fit=crop&crop=face"
     }
   ];
@@ -95,70 +95,70 @@ const TestimonialsSection = () => {
       name: "Mucait Budak",
       date: "18 October 2025",
       rating: 5,
-      review: "The tour was simply amazing — we saw all the animals we wanted to see. Thanks to our Guide, we didn't miss a thing and always felt safe. He really went out of his...",
+      review: "The tour with Emless Tours was simply amazing — we saw all the animals we wanted to see. Thanks to our Guide from Emless Tours, we didn't miss a thing and always felt safe.",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Michael Odle", 
       date: "28 September 2025",
       rating: 5,
-      review: "Incredible experience! From start to finish, everything was seamless and well-organized. The flight in was breathtaking, and our guide was amazing—...",
+      review: "Incredible experience with Emless Tours! From start to finish, everything was seamless and well-organized. The flight in was breathtaking, and our guide from Emless Tours was amazing.",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Alba Berenguer",
       date: "15 September 2025", 
       rating: 5,
-      review: "We went on an unforgettable safari with this agency and couldn't be happier with the experience. Our guide, Aristides, was simply wonderful: friendly, cheerful, and...",
+      review: "We went on an unforgettable safari with Emless Tours and couldn't be happier with the experience. Our guide, Aristides from Emless Tours, was simply wonderful: friendly, cheerful, and professional.",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Jennifer Smith",
       date: "10 September 2025",
       rating: 5,
-      review: "Outstanding service from booking to the end of our trip. The wildlife viewing was spectacular and our guide's knowledge was impressive.",
+      review: "Outstanding service from Emless Tours from booking to the end of our trip. The wildlife viewing was spectacular and our guide's knowledge was impressive. Highly recommend Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Carlos Rodriguez",
       date: "5 September 2025",
       rating: 5,
-      review: "Perfect organization and timing. We saw lions, elephants, and zebras up close. The photography opportunities were endless!",
+      review: "Perfect organization and timing with Emless Tours. We saw lions, elephants, and zebras up close. The photography opportunities were endless! Thank you Emless Tours!",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Lisa Johnson",
       date: "1 September 2025",
       rating: 5,
-      review: "The cultural tour of Stone Town was educational and fun. Our guide shared fascinating stories about the history and architecture.",
+      review: "The cultural tour of Stone Town with Emless Tours was educational and fun. Our guide shared fascinating stories about the history and architecture. Emless Tours is amazing!",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Ahmed Hassan",
       date: "25 August 2025",
       rating: 5,
-      review: "Excellent value for money. The accommodations were comfortable and the food was delicious. Highly recommend this tour company!",
+      review: "Excellent value for money with Emless Tours. The accommodations were comfortable and the food was delicious. Highly recommend Emless Tours to everyone!",
       avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Sophie Martin",
       date: "20 August 2025",
       rating: 5,
-      review: "The snorkeling and diving experiences were world-class. Crystal clear waters and abundant marine life made it magical.",
+      review: "The snorkeling and diving experiences with Emless Tours were world-class. Crystal clear waters and abundant marine life made it magical. Emless Tours exceeded expectations!",
       avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Thomas Anderson",
       date: "15 August 2025",
       rating: 5,
-      review: "Professional guides, comfortable transportation, and amazing wildlife encounters. This trip exceeded all our expectations!",
+      review: "Professional guides from Emless Tours, comfortable transportation, and amazing wildlife encounters. This trip with Emless Tours exceeded all our expectations!",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face"
     },
     {
       name: "Rachel Green",
       date: "10 August 2025",
       rating: 5,
-      review: "The sunset dhow cruise was romantic and peaceful. The whole Zanzibar experience was like a dream come true!",
+      review: "The sunset dhow cruise with Emless Tours was romantic and peaceful. The whole Zanzibar experience with Emless Tours was like a dream come true!",
       avatar: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=50&h=50&fit=crop&crop=face"
     }
   ];
