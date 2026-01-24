@@ -8,6 +8,7 @@ import ActivitiesSection from "@/components/ActivitiesSection";
 import HotelsSection from "@/components/HotelsSection";
 import TransportSection from "@/components/TransportSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import PartnersSection from "@/components/PartnersSection";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <HotelsSection />
       <TransportSection />
       <TestimonialsSection />
+      <PartnersSection />
     </div>
   );
 };
