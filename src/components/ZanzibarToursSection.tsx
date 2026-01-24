@@ -57,10 +57,10 @@ const ZanzibarToursSection = () => {
 
     return (
         <>
-        <section className="py-8 md:py-12 bg-background">
+        <section className="py-4 md:py-6 bg-background">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
-                <div className="text-center mb-8 md:mb-10">
+                <div className="text-center mb-4 md:mb-6">
                     <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
                         Zanzibar Tours
                     </h2>
@@ -136,7 +136,7 @@ const ZanzibarToursSection = () => {
                 </div>
 
                 {/* See More Button */}
-                <div className="text-center mt-6 md:mt-8">
+                <div className="text-center mt-4 md:mt-6">
                     <Link to="/zanzibar-tours">
                         <Button
                             variant="safari"

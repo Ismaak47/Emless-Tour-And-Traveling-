@@ -20,9 +20,9 @@ const ValuePropositions = () => {
   ];
 
   return (
-    <section className="py-3 md:py-5 bg-muted/50">
+    <section className="py-2 md:py-3 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {values.map((value, index) => (
             <div
               key={index}

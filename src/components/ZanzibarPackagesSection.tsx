@@ -108,9 +108,9 @@ const ZanzibarPackagesSection = () => {
     : packages.filter(pkg => pkg.category === selectedCategory);
 
   return (
-    <section className="py-12 md:py-20 bg-muted/30">
+    <section className="py-4 md:py-6 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-center mb-4 md:mb-6">
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Zanzibar Packages
           </h2>
