@@ -37,7 +37,7 @@ const TanzaniaSafariPackagesSection = () => {
       category: "Mid-Range",
       highlights: "Elephant herds, tree-climbing lions, baobab trees",
       price: "$999",
-      image: "https://images.unsplash.com/photo-1549366021-9f761d040fb2?w=400&h=300&fit=crop"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYw48vutslOzvc7Zz6lkV6H4kcsLq-rHs1w&s"
     },
     {
       id: "tsp004",

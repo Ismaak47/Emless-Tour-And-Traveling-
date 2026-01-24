@@ -28,7 +28,7 @@ const TanzaniaSafarisSection = () => {
             price: "$899",
             category: "tanzania",
             highlights: ["Elephant Herds", "Tree Climbing Lions", "Baobab Trees", "Bird Watching"],
-            image: "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?w=400&h=300&fit=crop&crop=center"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYw48vutslOzvc7Zz6lkV6H4kcsLq-rHs1w&s"
         },
         {
             id: "ts003",
