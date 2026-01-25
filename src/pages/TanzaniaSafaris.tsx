@@ -11,7 +11,6 @@ const TanzaniaSafaris = () => {
       duration: "5 Days",
       groupSize: "2-6 People",
       rating: 4.9,
-      price: "$1,899",
       highlights: ["Great Migration", "Big Five", "Ngorongoro Crater", "Cultural Visit"],
       description: "Experience the world-famous Serengeti National Park and the breathtaking Ngorongoro Crater.",
       image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400&h=300&fit=crop&crop=center"
@@ -22,7 +21,6 @@ const TanzaniaSafaris = () => {
       duration: "3 Days",
       groupSize: "2-8 People",
       rating: 4.7,
-      price: "$899",
       highlights: ["Elephant Herds", "Tree Climbing Lions", "Baobab Trees", "Bird Watching"],
       description: "Discover the elephant paradise of Tarangire and the unique tree-climbing lions of Lake Manyara.",
       image: "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?w=400&h=300&fit=crop&crop=center"
@@ -33,7 +31,6 @@ const TanzaniaSafaris = () => {
       duration: "7 Days",
       groupSize: "2-12 People",
       rating: 4.8,
-      price: "$2,299",
       highlights: ["Uhuru Peak", "Machame Route", "Professional Guide", "All Equipment"],
       description: "Conquer Africa's highest peak via the scenic Machame route with experienced guides.",
       image: "https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=400&h=300&fit=crop&crop=center"
@@ -44,7 +41,6 @@ const TanzaniaSafaris = () => {
       duration: "4 Days",
       groupSize: "2-8 People",
       rating: 4.7,
-      price: "$1,299",
       highlights: ["Boat Safari", "Walking Safari", "Wild Dogs", "Rufiji River"],
       description: "Explore Africa's largest game reserve with boat safaris and walking adventures.",
       image: "https://images.unsplash.com/photo-1549366021-9f761d040fb2?w=400&h=300&fit=crop&crop=center"
@@ -55,7 +51,6 @@ const TanzaniaSafaris = () => {
       duration: "6 Days",
       groupSize: "2-6 People",
       rating: 4.9,
-      price: "$2,199",
       highlights: ["Serengeti", "Ngorongoro", "Tarangire", "Lake Manyara"],
       description: "The ultimate Northern Tanzania safari covering all major national parks.",
       image: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=300&fit=crop&crop=center"
@@ -66,7 +61,6 @@ const TanzaniaSafaris = () => {
       duration: "3 Days",
       groupSize: "2-8 People",
       rating: 4.6,
-      price: "$699",
       highlights: ["Savannah Plains", "Hippo Pools", "Wildlife Viewing", "Baobab Trees"],
       description: "Explore the accessible Mikumi National Park with diverse wildlife and beautiful landscapes.",
       image: "https://images.unsplash.com/photo-1549366021-9f761d040fb2?w=400&h=300&fit=crop&crop=center"
@@ -77,7 +71,6 @@ const TanzaniaSafaris = () => {
       duration: "5 Days",
       groupSize: "2-6 People",
       rating: 4.8,
-      price: "$1,599",
       highlights: ["Great Ruaha River", "Predator Capital", "Remote Wilderness", "Baobab Forest"],
       description: "Discover Tanzania's largest national park, famous for its predators and remote wilderness.",
       image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400&h=300&fit=crop&crop=center"
@@ -88,7 +81,6 @@ const TanzaniaSafaris = () => {
       duration: "8 Days",
       groupSize: "2-6 People",
       rating: 4.9,
-      price: "$2,799",
       highlights: ["Serengeti", "Ngorongoro", "Tarangire", "Lake Manyara", "Olduvai Gorge"],
       description: "The comprehensive Tanzania safari experience covering all the iconic destinations.",
       image: "https://images.unsplash.com/photo-1516052121107-0d4decb9e217?w=400&h=300&fit=crop&crop=center"
@@ -120,9 +112,6 @@ const TanzaniaSafaris = () => {
                     alt={safari.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-safari"
                   />
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold">
-                    {safari.price}
-                  </div>
                 </div>
                 
                 <CardContent className="p-6">
